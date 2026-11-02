@@ -132,6 +132,23 @@ Run the following commands **from the parent directory of `recidivism_abm/`**, a
 # Interactive Mesa visualization
 python -m recidivism_abm/run.py
 
+# Baseline unCalibrated run
+# Interactive Mesa visualization
+python -m recidivism_abm/run.py
+
+# Baseline Uncalibrated Run generating necessary visualizations using average across 20 simulation runs
+python -m recidivism_abm/experiments/profile_run_multiseed_multirun_uncalibrated.py
+
+# Calibrated Run generating necessary visualizations using average across 20 simulation runs
+python -m recidivism_abm/experiments/profile_run_multiseed_multirun_calibrated.py 
+
+# Inspect available command-line options
+python -m recidivism_abm/ml_analysis/generate_ml_synthetic_50k_multiseed.py --help
+python -m recidivism_abm/ml_analysis/ml_analysis_95_CI.py --help
+python -m recidivism_abm/counterfactual_analysis/counterfactual_analysis.py --help
+
+# BJS/PCRA/offense calibration (computationally demanding)
+python -m recidivism_abm/experiments/OAT_Calibrate_BJS_PCRA.py
 # Calibrated Run generating necessary visualizations using average across 20 simulation runs
 python -m recidivism_abm/experiments/profile_run_multiseed_multirun_calibrated.py 
 
