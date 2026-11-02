@@ -1,0 +1,154 @@
+Feature,Importance,Importance_Type,Model
+Percent_Days_Employed,0.03599243,Feature importance,XGBoost
+Jobs_Per_Year,0.027259544,Feature importance,XGBoost
+Delinquency_Reports_4 or more,0.026338184,Feature importance,XGBoost
+Prior_Arrest_Episodes_PPViolationCharges_0,0.025390206,Feature importance,XGBoost
+Gang_Affiliated_False,0.024435388,Feature importance,XGBoost
+Age_at_Release_48 or older,0.021947408,Feature importance,XGBoost
+Prior_Arrest_Episodes_Property_0,0.016310373,Feature importance,XGBoost
+Gender_M,0.015921691,Feature importance,XGBoost
+Program_Attendances_10 or more,0.015759196,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_1,0.015146313,Feature importance,XGBoost
+Prior_Arrest_Episodes_PPViolationCharges_5 or more,0.015112368,Feature importance,XGBoost
+Delinquency_Reports_1,0.015001656,Feature importance,XGBoost
+Gang_Affiliated_True,0.014688687,Feature importance,XGBoost
+Residence_Changes_3 or more,0.013780081,Feature importance,XGBoost
+Prior_Revocations_Parole_True,0.013738404,Feature importance,XGBoost
+Residence_Changes_0,0.013391244,Feature importance,XGBoost
+Prior_Revocations_Parole_False,0.012089838,Feature importance,XGBoost
+Prior_Arrest_Episodes_Property_5 or more,0.011048995,Feature importance,XGBoost
+Delinquency_Reports_0,0.010865075,Feature importance,XGBoost
+Prior_Conviction_Episodes_Misd_0,0.009547338,Feature importance,XGBoost
+Prior_Arrest_Episodes_Misd_6 or more,0.009327847,Feature importance,XGBoost
+Prior_Conviction_Episodes_Prop_0,0.009200126,Feature importance,XGBoost
+Residence_Changes_1,0.009052251,Feature importance,XGBoost
+Supervision_Level_First_Standard,0.009035351,Feature importance,XGBoost
+Age_at_Release_18-22,0.008760558,Feature importance,XGBoost
+Condition_MH_SA_False,0.008469243,Feature importance,XGBoost
+Prior_Conviction_Episodes_Prop_3 or more,0.008096871,Feature importance,XGBoost
+Delinquency_Reports_2,0.008096444,Feature importance,XGBoost
+Delinquency_Reports_3,0.008086637,Feature importance,XGBoost
+Gender_F,0.0076837894,Feature importance,XGBoost
+Supervision_Risk_Score_First,0.007531494,Feature importance,XGBoost
+Prison_Offense_Violent/Sex,0.0073580877,Feature importance,XGBoost
+DrugTests_THC_Positive,0.007343928,Feature importance,XGBoost
+Age_at_Release_23-27,0.007262135,Feature importance,XGBoost
+Prison_Years_More than 3 years,0.007171812,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_10 or more,0.0071664234,Feature importance,XGBoost
+Program_Attendances_0,0.0070481407,Feature importance,XGBoost
+Avg_Days_per_DrugTest,0.006959543,Feature importance,XGBoost
+Program_Attendances_1,0.006909506,Feature importance,XGBoost
+Prison_Years_Less than 1 year,0.0062695835,Feature importance,XGBoost
+Violations_MoveWithoutPermission_True,0.0060784128,Feature importance,XGBoost
+Program_UnexcusedAbsences_0,0.005882883,Feature importance,XGBoost
+Prison_Offense_Property,0.00584116,Feature importance,XGBoost
+Program_Attendances_6,0.0058126785,Feature importance,XGBoost
+Violations_MoveWithoutPermission_False,0.005781801,Feature importance,XGBoost
+DrugTests_Meth_Positive,0.0057585114,Feature importance,XGBoost
+Condition_MH_SA_True,0.0057057817,Feature importance,XGBoost
+Program_Attendances_9,0.005362706,Feature importance,XGBoost
+Violations_Instruction_True,0.0053570154,Feature importance,XGBoost
+Program_Attendances_3,0.0053405003,Feature importance,XGBoost
+Residence_Changes_2,0.005290601,Feature importance,XGBoost
+Violations_Instruction_False,0.0052423337,Feature importance,XGBoost
+Prior_Arrest_Episodes_Drug_4,0.0051799905,Feature importance,XGBoost
+Prior_Conviction_Episodes_Misd_4 or more,0.0051651206,Feature importance,XGBoost
+DrugTests_Other_Positive,0.005123817,Feature importance,XGBoost
+Prior_Conviction_Episodes_PPViolationCharges_True,0.0051037134,Feature importance,XGBoost
+Prior_Arrest_Episodes_Misd_0,0.0050478536,Feature importance,XGBoost
+Prior_Conviction_Episodes_GunCharges_True,0.005042612,Feature importance,XGBoost
+Prior_Arrest_Episodes_Violent_2,0.004956144,Feature importance,XGBoost
+Prior_Arrest_Episodes_Drug_3,0.0049206847,Feature importance,XGBoost
+Program_Attendances_2,0.0049098847,Feature importance,XGBoost
+DrugTests_Cocaine_Positive,0.004889037,Feature importance,XGBoost
+Employment_Exempt_True,0.0047984943,Feature importance,XGBoost
+Prior_Arrest_Episodes_Violent_3 or more,0.004773137,Feature importance,XGBoost
+Prison_Offense_Other,0.0047704135,Feature importance,XGBoost
+Prior_Conviction_Episodes_Prop_2,0.004770248,Feature importance,XGBoost
+Condition_Other_True,0.00474073,Feature importance,XGBoost
+Prior_Arrest_Episodes_Drug_0,0.0047334325,Feature importance,XGBoost
+Program_Attendances_8,0.004731058,Feature importance,XGBoost
+Prior_Arrest_Episodes_PPViolationCharges_1,0.0046732314,Feature importance,XGBoost
+Education_Level_High School Diploma,0.004656617,Feature importance,XGBoost
+Age_at_Release_33-37,0.0046396367,Feature importance,XGBoost
+Age_at_Release_28-32,0.0045896806,Feature importance,XGBoost
+Prior_Arrest_Episodes_DVCharges_False,0.004543397,Feature importance,XGBoost
+Prior_Conviction_Episodes_Felony_3 or more,0.0045267637,Feature importance,XGBoost
+Violations_ElectronicMonitoring_False,0.004497874,Feature importance,XGBoost
+Program_Attendances_7,0.0044835643,Feature importance,XGBoost
+Age_at_Release_38-42,0.0044814837,Feature importance,XGBoost
+Prior_Conviction_Episodes_Viol_False,0.0044740215,Feature importance,XGBoost
+Prison_Years_1-2 years,0.00444388,Feature importance,XGBoost
+Prior_Conviction_Episodes_Drug_0,0.0044402406,Feature importance,XGBoost
+Race_WHITE,0.0044241375,Feature importance,XGBoost
+Prior_Arrest_Episodes_PPViolationCharges_4,0.004419719,Feature importance,XGBoost
+Age_at_Release_43-47,0.0044107107,Feature importance,XGBoost
+Prior_Arrest_Episodes_Property_4,0.0044010323,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_8,0.004399747,Feature importance,XGBoost
+Prior_Conviction_Episodes_Viol_True,0.0043832683,Feature importance,XGBoost
+Prior_Conviction_Episodes_Felony_2,0.0043700896,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_2,0.0043590716,Feature importance,XGBoost
+Race_BLACK,0.0043310435,Feature importance,XGBoost
+Education_Level_Less than HS diploma,0.0043141674,Feature importance,XGBoost
+Residence_PUMA,0.004300533,Feature importance,XGBoost
+Prior_Arrest_Episodes_Violent_0,0.0042964607,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_7,0.0042686416,Feature importance,XGBoost
+Violations_FailToReport_True,0.0042615784,Feature importance,XGBoost
+Prior_Revocations_Probation_False,0.0042468216,Feature importance,XGBoost
+Prior_Arrest_Episodes_PPViolationCharges_2,0.0042422144,Feature importance,XGBoost
+Prior_Arrest_Episodes_Drug_5 or more,0.0042207357,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_6,0.0042080246,Feature importance,XGBoost
+Prior_Arrest_Episodes_Misd_1,0.004207548,Feature importance,XGBoost
+Prior_Arrest_Episodes_Drug_2,0.004204632,Feature importance,XGBoost
+Prior_Conviction_Episodes_DomesticViolenceCharges_True,0.004203832,Feature importance,XGBoost
+Employment_Exempt_False,0.004174795,Feature importance,XGBoost
+Prior_Arrest_Episodes_Misd_3,0.004169106,Feature importance,XGBoost
+Dependents_0,0.0041650096,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_3,0.0041590338,Feature importance,XGBoost
+Program_UnexcusedAbsences_3 or more,0.0041458667,Feature importance,XGBoost
+Prison_Years_Greater than 2 to 3 years,0.0041311453,Feature importance,XGBoost
+Prior_Conviction_Episodes_Drug_1,0.004128432,Feature importance,XGBoost
+Supervision_Level_First_Specialized,0.0041258647,Feature importance,XGBoost
+Prior_Arrest_Episodes_GunCharges_True,0.004074516,Feature importance,XGBoost
+Education_Level_At least some college,0.0040590833,Feature importance,XGBoost
+Violations_FailToReport_False,0.004041845,Feature importance,XGBoost
+Prior_Arrest_Episodes_Drug_1,0.0040374645,Feature importance,XGBoost
+Dependents_1,0.0040367036,Feature importance,XGBoost
+Dependents_2,0.004009887,Feature importance,XGBoost
+Prior_Conviction_Episodes_Misd_3,0.004004479,Feature importance,XGBoost
+Prior_Conviction_Episodes_Drug_2 or more,0.0039775097,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_0,0.003924433,Feature importance,XGBoost
+Prior_Arrest_Episodes_GunCharges_False,0.003898188,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_4,0.0038391184,Feature importance,XGBoost
+Prior_Conviction_Episodes_Felony_0,0.003834254,Feature importance,XGBoost
+Prior_Arrest_Episodes_Property_3,0.0038156302,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_9,0.0038133129,Feature importance,XGBoost
+Prior_Conviction_Episodes_PPViolationCharges_False,0.0038043507,Feature importance,XGBoost
+Prior_Arrest_Episodes_Property_2,0.0037865457,Feature importance,XGBoost
+Prior_Arrest_Episodes_PPViolationCharges_3,0.003777466,Feature importance,XGBoost
+Prior_Arrest_Episodes_Misd_5,0.0037727319,Feature importance,XGBoost
+Program_UnexcusedAbsences_1,0.0037703686,Feature importance,XGBoost
+Prior_Arrest_Episodes_Misd_4,0.0037593693,Feature importance,XGBoost
+Prior_Conviction_Episodes_DomesticViolenceCharges_False,0.003756475,Feature importance,XGBoost
+Condition_Other_False,0.00373309,Feature importance,XGBoost
+Condition_Cog_Ed_True,0.003725998,Feature importance,XGBoost
+Prison_Offense_Violent/Non-Sex,0.0037226155,Feature importance,XGBoost
+Program_UnexcusedAbsences_2,0.0037215042,Feature importance,XGBoost
+Prior_Conviction_Episodes_Misd_2,0.003715978,Feature importance,XGBoost
+Prior_Arrest_Episodes_Felony_5,0.0037151729,Feature importance,XGBoost
+Dependents_3 or more,0.0037058305,Feature importance,XGBoost
+Prior_Arrest_Episodes_Violent_1,0.0036964524,Feature importance,XGBoost
+Supervision_Level_First_High,0.0036821102,Feature importance,XGBoost
+Prior_Conviction_Episodes_Prop_1,0.0036268886,Feature importance,XGBoost
+Prior_Conviction_Episodes_Felony_1,0.0036070526,Feature importance,XGBoost
+Prior_Conviction_Episodes_Misd_1,0.0035819272,Feature importance,XGBoost
+Prior_Arrest_Episodes_Misd_2,0.0035791786,Feature importance,XGBoost
+Prior_Revocations_Probation_True,0.0035784882,Feature importance,XGBoost
+Program_Attendances_5,0.003492385,Feature importance,XGBoost
+Prior_Arrest_Episodes_Property_1,0.0034823595,Feature importance,XGBoost
+Condition_Cog_Ed_False,0.0034762574,Feature importance,XGBoost
+Prior_Arrest_Episodes_DVCharges_True,0.0033649055,Feature importance,XGBoost
+Prior_Conviction_Episodes_GunCharges_False,0.0033514898,Feature importance,XGBoost
+Violations_ElectronicMonitoring_True,0.0033334114,Feature importance,XGBoost
+Prison_Offense_Drug,0.0032623636,Feature importance,XGBoost
+Program_Attendances_4,0.003222299,Feature importance,XGBoost

@@ -1,0 +1,154 @@
+Feature,Importance,Importance_Type,Model
+Percent_Days_Employed,0.043952488940787106,Feature importance,Extra Trees
+Supervision_Risk_Score_First,0.01713548943951531,Feature importance,Extra Trees
+Jobs_Per_Year,0.015629084232614575,Feature importance,Extra Trees
+Gang_Affiliated_True,0.014389044559989628,Feature importance,Extra Trees
+Prior_Arrest_Episodes_PPViolationCharges_0,0.01406124321080472,Feature importance,Extra Trees
+Residence_PUMA,0.013541891281211405,Feature importance,Extra Trees
+Gang_Affiliated_False,0.013538062500089414,Feature importance,Extra Trees
+Avg_Days_per_DrugTest,0.013125446589750438,Feature importance,Extra Trees
+Age_at_Release_48 or older,0.01211164604618275,Feature importance,Extra Trees
+Prior_Arrest_Episodes_PPViolationCharges_5 or more,0.010155506980746479,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Misd_0,0.009887095622689537,Feature importance,Extra Trees
+DrugTests_THC_Positive,0.00948897414493331,Feature importance,Extra Trees
+Residence_Changes_0,0.009431839849065012,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Property_0,0.009237852804868414,Feature importance,Extra Trees
+Dependents_0,0.009064743907855338,Feature importance,Extra Trees
+Age_at_Release_23-27,0.009062942703069204,Feature importance,Extra Trees
+Education_Level_High School Diploma,0.008971897002952539,Feature importance,Extra Trees
+Program_Attendances_0,0.008927519246720899,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Prop_0,0.008767728621788647,Feature importance,Extra Trees
+Prison_Years_Less than 1 year,0.008721881170606344,Feature importance,Extra Trees
+Dependents_3 or more,0.008577075751114062,Feature importance,Extra Trees
+Supervision_Level_First_Standard,0.008565385214840274,Feature importance,Extra Trees
+Education_Level_Less than HS diploma,0.008509514111679741,Feature importance,Extra Trees
+Education_Level_At least some college,0.008507183094172062,Feature importance,Extra Trees
+Prison_Offense_Property,0.00841791495746742,Feature importance,Extra Trees
+Race_BLACK,0.008202019157016786,Feature importance,Extra Trees
+Condition_Cog_Ed_False,0.008148189325594888,Feature importance,Extra Trees
+Prison_Years_More than 3 years,0.008145664179570591,Feature importance,Extra Trees
+Race_WHITE,0.008134006030939635,Feature importance,Extra Trees
+Condition_Cog_Ed_True,0.008051466482564258,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Violent_1,0.008025316029894104,Feature importance,Extra Trees
+Delinquency_Reports_0,0.007937973551739677,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Violent_0,0.007935483392439342,Feature importance,Extra Trees
+Residence_Changes_1,0.007870512535936212,Feature importance,Extra Trees
+Prison_Years_1-2 years,0.007839509966010667,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Misd_6 or more,0.007797076659019821,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Felony_1,0.007704648551079424,Feature importance,Extra Trees
+Supervision_Level_First_High,0.007584422386064627,Feature importance,Extra Trees
+Dependents_1,0.007562672534420315,Feature importance,Extra Trees
+Condition_MH_SA_False,0.0074809097581268365,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Drug_1,0.007420703338443135,Feature importance,Extra Trees
+Condition_MH_SA_True,0.007371139113224278,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Drug_0,0.007363074218726003,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_1,0.007315464991330408,Feature importance,Extra Trees
+Condition_Other_False,0.007313990187686034,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Drug_1,0.007311037287727809,Feature importance,Extra Trees
+Dependents_2,0.007232036238705652,Feature importance,Extra Trees
+Condition_Other_True,0.007214330598770614,Feature importance,Extra Trees
+Delinquency_Reports_4 or more,0.007143156279367703,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Drug_0,0.007109087721124688,Feature importance,Extra Trees
+Program_Attendances_10 or more,0.006986614837436265,Feature importance,Extra Trees
+Prior_Arrest_Episodes_GunCharges_False,0.00694164762124237,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Felony_0,0.006939072766995671,Feature importance,Extra Trees
+Age_at_Release_28-32,0.006907285287369915,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Viol_False,0.0068362669348497355,Feature importance,Extra Trees
+Prior_Arrest_Episodes_GunCharges_True,0.006804338238411316,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Viol_True,0.006757859540718019,Feature importance,Extra Trees
+Age_at_Release_18-22,0.006719441487483122,Feature importance,Extra Trees
+Prison_Years_Greater than 2 to 3 years,0.006689479446521136,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_10 or more,0.006621853836672553,Feature importance,Extra Trees
+Prison_Offense_Drug,0.006574396614088205,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Property_1,0.006514270041991687,Feature importance,Extra Trees
+Supervision_Level_First_Specialized,0.006452758919325554,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Drug_2,0.006350979870774127,Feature importance,Extra Trees
+Age_at_Release_33-37,0.006342776793979523,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Misd_1,0.006326772959965527,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Felony_2,0.006298585665929667,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Misd_4 or more,0.006242000354862463,Feature importance,Extra Trees
+Prior_Conviction_Episodes_PPViolationCharges_False,0.006193556276982915,Feature importance,Extra Trees
+Residence_Changes_2,0.006178690603076183,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Prop_1,0.006177819477519253,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Drug_2 or more,0.00617007826704311,Feature importance,Extra Trees
+Prior_Conviction_Episodes_PPViolationCharges_True,0.006160966669936072,Feature importance,Extra Trees
+Prior_Arrest_Episodes_PPViolationCharges_1,0.006160880609239792,Feature importance,Extra Trees
+Program_Attendances_6,0.006046119671855551,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Misd_0,0.006023696164956425,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Misd_1,0.005915266800802866,Feature importance,Extra Trees
+Program_UnexcusedAbsences_0,0.0058919940592750695,Feature importance,Extra Trees
+Prison_Offense_Violent/Non-Sex,0.005877007112793588,Feature importance,Extra Trees
+Age_at_Release_38-42,0.0058429156085512985,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Violent_2,0.005780231661974297,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Felony_3 or more,0.005740496608683797,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Misd_2,0.005709208745744357,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Property_2,0.005703069003367089,Feature importance,Extra Trees
+Residence_Changes_3 or more,0.005689702556330489,Feature importance,Extra Trees
+Violations_Instruction_True,0.005583986474995007,Feature importance,Extra Trees
+Employment_Exempt_True,0.005572620666899522,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Prop_3 or more,0.00554485532982329,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Drug_3,0.005532966614866929,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Misd_2,0.00553169837587081,Feature importance,Extra Trees
+Prior_Revocations_Probation_True,0.005514178261317986,Feature importance,Extra Trees
+Employment_Exempt_False,0.005512931704703802,Feature importance,Extra Trees
+Gender_F,0.005510243198124112,Feature importance,Extra Trees
+Prior_Arrest_Episodes_PPViolationCharges_2,0.005497123567752118,Feature importance,Extra Trees
+Gender_M,0.005487386498036798,Feature importance,Extra Trees
+Violations_Instruction_False,0.005484068799213172,Feature importance,Extra Trees
+Prior_Revocations_Probation_False,0.005472332002570874,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Property_5 or more,0.005468922600743346,Feature importance,Extra Trees
+Age_at_Release_43-47,0.005465569255754898,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_3,0.005352647463033221,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Misd_3,0.00525157262177273,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_4,0.005218842943138909,Feature importance,Extra Trees
+Prison_Offense_Other,0.005196148603893994,Feature importance,Extra Trees
+Prior_Arrest_Episodes_PPViolationCharges_3,0.005179820413236999,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Violent_3 or more,0.005054863390355426,Feature importance,Extra Trees
+Prior_Arrest_Episodes_DVCharges_False,0.005021996864067735,Feature importance,Extra Trees
+Prior_Arrest_Episodes_DVCharges_True,0.004916189337616829,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_2,0.004895162898931304,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Prop_2,0.0048932083957824,Feature importance,Extra Trees
+Prior_Conviction_Episodes_GunCharges_True,0.004846736888503578,Feature importance,Extra Trees
+Prior_Conviction_Episodes_GunCharges_False,0.004822987716214463,Feature importance,Extra Trees
+Prior_Conviction_Episodes_Misd_3,0.004799529893259716,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Misd_4,0.0047711894954649385,Feature importance,Extra Trees
+Violations_MoveWithoutPermission_False,0.004729874376434201,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_5,0.004698642453371433,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Property_3,0.004681782003647274,Feature importance,Extra Trees
+Violations_MoveWithoutPermission_True,0.004671296287186077,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Drug_5 or more,0.00461544506823709,Feature importance,Extra Trees
+Prior_Revocations_Parole_True,0.004378417720809075,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_6,0.004329548123654711,Feature importance,Extra Trees
+Prior_Revocations_Parole_False,0.00432813990386783,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_7,0.0042279111319691275,Feature importance,Extra Trees
+Prior_Arrest_Episodes_PPViolationCharges_4,0.0041953632086560045,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Misd_5,0.004028762359189213,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Property_4,0.004014083269025324,Feature importance,Extra Trees
+Delinquency_Reports_1,0.0040040145346852424,Feature importance,Extra Trees
+DrugTests_Cocaine_Positive,0.003998244317875268,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Drug_4,0.003959243441832329,Feature importance,Extra Trees
+DrugTests_Meth_Positive,0.003957164235014188,Feature importance,Extra Trees
+Program_UnexcusedAbsences_3 or more,0.003875824546493947,Feature importance,Extra Trees
+Program_UnexcusedAbsences_1,0.0036436376481005905,Feature importance,Extra Trees
+Delinquency_Reports_3,0.003624275359270496,Feature importance,Extra Trees
+Violations_FailToReport_False,0.0035568367425416196,Feature importance,Extra Trees
+Violations_ElectronicMonitoring_False,0.0035214609369390894,Feature importance,Extra Trees
+Violations_ElectronicMonitoring_True,0.0035168545406730136,Feature importance,Extra Trees
+Program_Attendances_5,0.003508409211041203,Feature importance,Extra Trees
+Violations_FailToReport_True,0.003488767901097853,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_8,0.00347423870618114,Feature importance,Extra Trees
+DrugTests_Other_Positive,0.003342418050704554,Feature importance,Extra Trees
+Delinquency_Reports_2,0.003308410009609018,Feature importance,Extra Trees
+Prior_Conviction_Episodes_DomesticViolenceCharges_False,0.0031357201523567603,Feature importance,Extra Trees
+Prior_Conviction_Episodes_DomesticViolenceCharges_True,0.003112972129714915,Feature importance,Extra Trees
+Program_Attendances_1,0.002750949389891112,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_9,0.002722225835802744,Feature importance,Extra Trees
+Program_UnexcusedAbsences_2,0.002688194683239351,Feature importance,Extra Trees
+Prison_Offense_Violent/Sex,0.0026685618219802532,Feature importance,Extra Trees
+Program_Attendances_7,0.002642163922560624,Feature importance,Extra Trees
+Program_Attendances_2,0.00249066897798964,Feature importance,Extra Trees
+Program_Attendances_4,0.002434773756222125,Feature importance,Extra Trees
+Program_Attendances_3,0.0020248623287619947,Feature importance,Extra Trees
+Program_Attendances_9,0.0017173866531688172,Feature importance,Extra Trees
+Program_Attendances_8,0.001691869811717913,Feature importance,Extra Trees
+Prior_Arrest_Episodes_Felony_0,0.0012793605547548091,Feature importance,Extra Trees

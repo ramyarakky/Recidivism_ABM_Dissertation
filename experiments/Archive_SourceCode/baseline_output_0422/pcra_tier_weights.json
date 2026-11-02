@@ -1,0 +1,22 @@
+{
+  "tier_weights": {
+    "Low": 0.291,
+    "LowModerate": 0.356,
+    "Moderate": 0.239,
+    "High": 0.114
+  },
+  "tier_counts": {
+    "Low": 212984,
+    "LowModerate": 260674,
+    "Moderate": 174999,
+    "High": 83582
+  },
+  "total_agents": 732239,
+  "n_runs": 200,
+  "pcra_reference": {
+    "Low": 0.292,
+    "LowModerate": 0.356,
+    "Moderate": 0.239,
+    "High": 0.096
+  }
+}

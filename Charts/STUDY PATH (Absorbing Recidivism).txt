@@ -1,0 +1,39 @@
+┌────────────────────────────────────────┐
+│ in_warmup = False                      │
+│ recidivated_agent = False              │
+└────────────────────────────────────────┘
+              │
+              ▼
+    [Absorbing Guard?]
+    if not in_warmup and recidivated_agent:
+              │
+              └── False → continue
+              ▼
+   ┌───────────────────────────────────┐
+   │ evaluate_recidivism_by_percentile │
+   └───────────────────────────────────┘
+              │
+      recidivated?
+        │        │
+        │ NO     │ YES
+        ▼        ▼
+      return   ┌──────────────────────────────┐
+               │ Set common event metadata    │
+               │ • committed_new_offense      │
+               │ • rearrest_month/year        │
+               └──────────────────────────────┘
+                              │
+                              ▼
+               ┌──────────────────────────────┐
+               │ Study actions (absorbing)    │
+               │ • recidivated_agent = True  │
+               │ • exited_due_to_recidivism  │
+               └──────────────────────────────┘
+                              │
+                              ▼
+               ┌──────────────────────────────┐
+               │ Set 3/6/9-yr outcome flags   │
+               └──────────────────────────────┘
+                              │
+                              ▼
+                            return

@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-02-05 15:36:49",
+  "last_update": "2026-02-06 14:07:42",
+  "total_jobs": 15000,
+  "completed": 9000,
+  "ok": 9000,
+  "fail": 0,
+  "max_workers": 24,
+  "chunksize": 8,
+  "elapsed_sec": 81053.19,
+  "eta": "ETA: 900m 35s",
+  "raw_csv": "Sensitivity_OAT_Weights/sensitivity_raw.csv"
+}

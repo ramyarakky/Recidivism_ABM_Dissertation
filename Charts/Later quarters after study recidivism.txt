@@ -1,0 +1,10 @@
+┌────────────────────────────────────────┐
+│ in_warmup = False                      │
+│ recidivated_agent = True               │
+└────────────────────────────────────────┘
+              │
+              ▼
+    [Absorbing Guard?]
+    if not in_warmup and recidivated_agent:
+              │
+              └── True → 🚫 return immediately

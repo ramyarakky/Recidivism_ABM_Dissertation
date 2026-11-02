@@ -1,0 +1,94 @@
+{
+  "bias_factor": 1.0,
+  "bias_scope": "all_channels",
+  "reference_race": "White",
+  "reference_gender": "Male",
+  "calibrated_race_bias": {
+    "Hispanic": -0.05,
+    "Black": 0.58
+  },
+  "calibrated_gender_bias": {
+    "Female": -0.96
+  },
+  "bjs_targets": {
+    "3": {
+      "Male": 0.68,
+      "Female": 0.58,
+      "White": 0.66,
+      "Black": 0.72,
+      "Hispanic": 0.68
+    },
+    "6": {
+      "Male": 0.79,
+      "Female": 0.7,
+      "White": 0.77,
+      "Black": 0.82,
+      "Hispanic": 0.79
+    },
+    "9": {
+      "Male": 0.84,
+      "Female": 0.77,
+      "White": 0.81,
+      "Black": 0.87,
+      "Hispanic": 0.84
+    }
+  },
+  "baseline_offsets": {
+    "3": {
+      "Male": 0.0163,
+      "Female": 0.0,
+      "White": 0.0317,
+      "Black": -0.0171,
+      "Hispanic": 0.0155
+    },
+    "6": {
+      "Male": 0.003,
+      "Female": 0.0,
+      "White": 0.0204,
+      "Black": -0.0214,
+      "Hispanic": 0.0026
+    },
+    "9": {
+      "Male": -0.0282,
+      "Female": 0.0,
+      "White": -0.0007,
+      "Black": -0.0536,
+      "Hispanic": -0.0285
+    }
+  },
+  "adjusted_targets": {
+    "3": {
+      "Male": 0.6637,
+      "Female": 0.58,
+      "White": 0.6283,
+      "Black": 0.7371,
+      "Hispanic": 0.6645
+    },
+    "6": {
+      "Male": 0.787,
+      "Female": 0.7,
+      "White": 0.7496,
+      "Black": 0.8414,
+      "Hispanic": 0.7874
+    },
+    "9": {
+      "Male": 0.8682,
+      "Female": 0.77,
+      "White": 0.8107,
+      "Black": 0.9236,
+      "Hispanic": 0.8685
+    }
+  },
+  "performance_settings": {
+    "agents_coarse": 500,
+    "seeds_coarse": [
+      42,
+      137,
+      251,
+      389,
+      503
+    ],
+    "n_reps_coarse": 5,
+    "n_reps_fine": 10
+  }
+}

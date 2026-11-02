@@ -1,0 +1,37 @@
+{
+  "purpose": "ML synthetic-data generation from multiple independent calibrated ABM realizations",
+  "target_agents": 50000,
+  "final_agents": 50000,
+  "total_agents_generated_before_cap": 59595,
+  "independent_seeds_used": [
+    21000,
+    22000,
+    23000,
+    24000,
+    25000,
+    26000
+  ],
+  "n_independent_seeds_used": 6,
+  "base_model_params": {
+    "initial_agents": 3000,
+    "warmup_months": 144,
+    "study_months": 108,
+    "monthly_intake": 10,
+    "bias_factor": 1,
+    "enable_peer_influence": true
+  },
+  "calibration_source": "get_global_calibration_params()",
+  "bjs_targets_descriptive_reference": {
+    "rearrest_3_yrs": 0.684,
+    "rearrest_6_yrs": 0.794,
+    "rearrest_9_yrs": 0.834
+  },
+  "provenance_columns": [
+    "synthetic_record_id",
+    "simulation_id",
+    "simulation_seed",
+    "source_row_id"
+  ],
+  "recommended_ml_validation": "Use simulation_seed/simulation_id for group-aware train/test splitting and, where practical, group-aware CV. Do not include provenance columns as predictive features.",
+  "final_dataset": "ml_synthetic_50k_multiseed_bias/02_combined_dataset/synthetic_ml_cohort_multiseed_N50000.csv"
+}

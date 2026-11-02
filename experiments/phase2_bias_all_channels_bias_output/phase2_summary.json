@@ -1,0 +1,109 @@
+{
+  "bias_factor": 1.0,
+  "bias_scope": "all_channels",
+  "reference_race": "White",
+  "reference_gender": "Male",
+  "calibrated_race_bias": {
+    "Hispanic": 0.0,
+    "Black": 0.1
+  },
+  "calibrated_gender_bias": {
+    "Female": 0.64
+  },
+  "bjs_targets": {
+    "3": {
+      "Male": 0.68,
+      "Female": 0.58,
+      "White": 0.66,
+      "Black": 0.72,
+      "Hispanic": 0.68
+    },
+    "6": {
+      "Male": 0.79,
+      "Female": 0.7,
+      "White": 0.77,
+      "Black": 0.82,
+      "Hispanic": 0.79
+    },
+    "9": {
+      "Male": 0.84,
+      "Female": 0.77,
+      "White": 0.81,
+      "Black": 0.87,
+      "Hispanic": 0.84
+    }
+  },
+  "bjs_gap_targets": {
+    "3": {
+      "Black": 0.05999999999999994,
+      "Hispanic": 0.020000000000000018,
+      "Female": -0.10000000000000009
+    },
+    "6": {
+      "Black": 0.04999999999999993,
+      "Hispanic": 0.020000000000000018,
+      "Female": -0.09000000000000008
+    },
+    "9": {
+      "Black": 0.05999999999999994,
+      "Hispanic": 0.029999999999999916,
+      "Female": -0.06999999999999995
+    }
+  },
+  "zero_bias_rates": {
+    "3": {
+      "Male": 0.6925177731248968,
+      "Female": 0.6889701372919572,
+      "White": 0.6872394202101013,
+      "Black": 0.6987281468693723,
+      "Hispanic": 0.6901540249043978,
+      "Overall": 0.692283174821085
+    },
+    "6": {
+      "Male": 0.7917962006137981,
+      "Female": 0.7963948644647513,
+      "White": 0.7898852577724641,
+      "Black": 0.7959747128838983,
+      "Hispanic": 0.7900829424541187,
+      "Overall": 0.79216388453423
+    },
+    "9": {
+      "Male": 0.8102476292141809,
+      "Female": 0.8142977125682413,
+      "White": 0.8090203703096662,
+      "Black": 0.8128518881967227,
+      "Hispanic": 0.8096088759705355,
+      "Overall": 0.8105777969367841
+    }
+  },
+  "zero_bias_gaps": {
+    "3": {
+      "Black": 0.011488726659271031,
+      "Hispanic": 0.0029146046942964965,
+      "Female": -0.0035476358329395996
+    },
+    "6": {
+      "Black": 0.006089455111434217,
+      "Hispanic": 0.0001976846816545974,
+      "Female": 0.0045986638509532
+    },
+    "9": {
+      "Black": 0.0038315178870564903,
+      "Hispanic": 0.0005885056608693207,
+      "Female": 0.00405008335406043
+    }
+  },
+  "calibration_objective": "group_gap_mae",
+  "performance_settings": {
+    "agents_coarse": 500,
+    "seeds_coarse": [
+      42,
+      137,
+      251,
+      389,
+      503
+    ],
+    "n_reps_coarse": 5,
+    "n_reps_fine": 10
+  }
+}

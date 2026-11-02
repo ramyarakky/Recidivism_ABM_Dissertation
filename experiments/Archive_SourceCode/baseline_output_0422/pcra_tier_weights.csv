@@ -1,0 +1,5 @@
+tier,count,proportion,pcra_ref,diff_from_pcra
+Low,212984,0.291,0.292,-0.001
+LowModerate,260674,0.356,0.356,0.0
+Moderate,174999,0.239,0.239,0.0
+High,83582,0.114,0.096,0.018

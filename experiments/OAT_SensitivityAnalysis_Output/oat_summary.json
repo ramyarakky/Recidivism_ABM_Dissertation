@@ -1,0 +1,176 @@
+{
+  "baseline_cal": {
+    "Supervision_Monitoring_Intensity": 1.12,
+    "Risk_Effect_Decay_After_1Y": 0.524,
+    "Risk_Effect_Decay_After_3Y": 0.5,
+    "Risk_Effect_Decay_After_6Y": 0.508,
+    "Supervision_Monitoring_Decay_After_3Y": 0.99,
+    "Supervision_Monitoring_Decay_After_6Y": 0.4,
+    "Risk_Contrast_Strength": 1,
+    "bias_factor": 0.0,
+    "bias_scope": "supervision_only",
+    "tech_detect_base": 0.3
+  },
+  "bjs_targets": {
+    "3": 0.68,
+    "6": 0.79,
+    "9": 0.83
+  },
+  "n_runs": 100,
+  "perturbations": [
+    -0.4,
+    -0.3,
+    -0.2,
+    -0.1,
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "results": [
+    {
+      "key": "Supervision_Monitoring_Intensity",
+      "short": "SMI (\u03b1)",
+      "group": "Stage 1 \u2014 Calibrated",
+      "sensitivity_3yr": 0.04146999999999984,
+      "sensitivity_6yr": 0.027830000000000077,
+      "sensitivity_9yr": 0.026044999999999874,
+      "baseline_3yr": 0.7028599999999998,
+      "baseline_6yr": 0.7987700000000002,
+      "baseline_9yr": 0.81566
+    },
+    {
+      "key": "Supervision_Monitoring_Decay_After_3Y",
+      "short": "SMD3 (\u03b4s3)",
+      "group": "Stage 1 \u2014 Calibrated",
+      "sensitivity_3yr": 0.001294999999999935,
+      "sensitivity_6yr": 0.005340000000000067,
+      "sensitivity_9yr": 0.004484999999999961,
+      "baseline_3yr": 0.70274,
+      "baseline_6yr": 0.79938,
+      "baseline_9yr": 0.8158299999999998
+    },
+    {
+      "key": "Supervision_Monitoring_Decay_After_6Y",
+      "short": "SMD6 (\u03b4s6)",
+      "group": "Stage 1 \u2014 Calibrated",
+      "sensitivity_3yr": 0.0007749999999999702,
+      "sensitivity_6yr": 0.00027999999999983594,
+      "sensitivity_9yr": 0.00015499999999996072,
+      "baseline_3yr": 0.70268,
+      "baseline_6yr": 0.7996500000000002,
+      "baseline_9yr": 0.81623
+    },
+    {
+      "key": "Risk_Contrast_Strength",
+      "short": "RCS (\u03b3)",
+      "group": "Stage 2 \u2014 Calibrated",
+      "sensitivity_3yr": 0.0049799999999999844,
+      "sensitivity_6yr": 0.004084999999999894,
+      "sensitivity_9yr": 0.007739999999999914,
+      "baseline_3yr": 0.7025299999999999,
+      "baseline_6yr": 0.7991800000000001,
+      "baseline_9yr": 0.8157
+    },
+    {
+      "key": "Violent",
+      "short": "Shift: Violent",
+      "group": "Stage 3 \u2014 Calibrated",
+      "sensitivity_3yr": 0.01675499999999991,
+      "sensitivity_6yr": 0.015349999999999975,
+      "sensitivity_9yr": 0.014534999999999909,
+      "baseline_3yr": 0.70168,
+      "baseline_6yr": 0.7982100000000001,
+      "baseline_9yr": 0.8149000000000001
+    },
+    {
+      "key": "Drug",
+      "short": "Shift: Drug",
+      "group": "Stage 3 \u2014 Calibrated",
+      "sensitivity_3yr": 0.014239999999999975,
+      "sensitivity_6yr": 0.012830000000000119,
+      "sensitivity_9yr": 0.01229499999999989,
+      "baseline_3yr": 0.7030799999999999,
+      "baseline_6yr": 0.7995000000000003,
+      "baseline_9yr": 0.8157399999999998
+    },
+    {
+      "key": "Property",
+      "short": "Shift: Property",
+      "group": "Stage 3 \u2014 Calibrated",
+      "sensitivity_3yr": 0.016299999999999926,
+      "sensitivity_6yr": 0.012655000000000027,
+      "sensitivity_9yr": 0.011904999999999777,
+      "baseline_3yr": 0.7021499999999997,
+      "baseline_6yr": 0.7986300000000002,
+      "baseline_9yr": 0.81506
+    },
+    {
+      "key": "Other(PublicOrder)",
+      "short": "Shift: Other",
+      "group": "Stage 3 \u2014 Calibrated",
+      "sensitivity_3yr": 0.020075000000000065,
+      "sensitivity_6yr": 0.018139999999999934,
+      "sensitivity_9yr": 0.017149999999999888,
+      "baseline_3yr": 0.7020099999999999,
+      "baseline_6yr": 0.79878,
+      "baseline_9yr": 0.81506
+    },
+    {
+      "key": "Age_at_Release",
+      "short": "Age",
+      "group": "Risk Weights",
+      "sensitivity_3yr": 0.00012999999999990797,
+      "sensitivity_6yr": 0.00013999999999997348,
+      "sensitivity_9yr": 0.00022999999999995246,
+      "baseline_3yr": 0.7020199999999999,
+      "baseline_6yr": 0.7992200000000003,
+      "baseline_9yr": 0.8157299999999998
+    },
+    {
+      "key": "Prior_Revocations_Supervision",
+      "short": "Revocation",
+      "group": "Risk Weights",
+      "sensitivity_3yr": 2.500000000016378e-05,
+      "sensitivity_6yr": 0.0001500000000000945,
+      "sensitivity_9yr": 0.0008149999999999546,
+      "baseline_3yr": 0.7002499999999998,
+      "baseline_6yr": 0.79769,
+      "baseline_9yr": 0.8144899999999999
+    },
+    {
+      "key": "Gang_Affiliated",
+      "short": "Gang",
+      "group": "Risk Weights",
+      "sensitivity_3yr": 3.4999999999951736e-05,
+      "sensitivity_6yr": 4.999999999977245e-06,
+      "sensitivity_9yr": 0.00015999999999993797,
+      "baseline_3yr": 0.7022899999999999,
+      "baseline_6yr": 0.79857,
+      "baseline_9yr": 0.8151999999999999
+    },
+    {
+      "key": "Percent_Days_Employed",
+      "short": "Employment",
+      "group": "Risk Weights",
+      "sensitivity_3yr": 0.0004049999999999887,
+      "sensitivity_6yr": 0.0007499999999999174,
+      "sensitivity_9yr": 0.0008050000000000557,
+      "baseline_3yr": 0.7006,
+      "baseline_6yr": 0.79726,
+      "baseline_9yr": 0.8136599999999998
+    },
+    {
+      "key": "Program_Attendances",
+      "short": "Program",
+      "group": "Risk Weights",
+      "sensitivity_3yr": 0.0016500000000000958,
+      "sensitivity_6yr": 0.0012100000000000444,
+      "sensitivity_9yr": 0.0014299999999999313,
+      "baseline_3yr": 0.70152,
+      "baseline_6yr": 0.7985100000000002,
+      "baseline_9yr": 0.81495
+    }
+  ]
+}

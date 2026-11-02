@@ -1,0 +1,38 @@
+┌────────────────────────────────────────┐
+│ in_warmup = True                       │
+└────────────────────────────────────────┘
+              │
+              ▼
+    [Absorbing Guard?]
+    if not in_warmup and recidivated_agent:
+              │
+              └── False → continue
+              ▼
+   ┌───────────────────────────────────┐
+   │ evaluate_recidivism_by_percentile │
+   └───────────────────────────────────┘
+              │
+      recidivated?
+        │        │
+        │ NO     │ YES
+        ▼        ▼
+      return   ┌──────────────────────────────┐
+               │ Set common event metadata    │
+               │ • committed_new_offense      │
+               │ • rearrest_month/year        │
+               └──────────────────────────────┘
+                              │
+                              ▼
+               ┌──────────────────────────────┐
+               │ Warm-up actions              │
+               │ • recidivated_agent = False  │
+               │ • justice_state = Trial      │
+               │ • handle_trial()             │
+               └──────────────────────────────┘
+                              │
+                              ▼
+                            return
+							
+							
+							
+							

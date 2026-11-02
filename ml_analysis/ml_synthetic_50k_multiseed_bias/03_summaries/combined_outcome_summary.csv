@@ -1,0 +1,4 @@
+horizon,outcome_column,n_nonmissing,synthetic_rate,bjs_target,difference_pp
+3-Year,rearrest_3_yrs,50000,0.6988,0.684,1.4799999999999924
+6-Year,rearrest_6_yrs,50000,0.79726,0.794,0.32599999999999296
+9-Year,rearrest_9_yrs,50000,0.81518,0.834,-1.8819999999999948

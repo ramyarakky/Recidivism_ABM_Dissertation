@@ -1,0 +1,58 @@
+{
+  "offsets": {
+    "3": {
+      "Male": 0.0148,
+      "Female": 0.0,
+      "White": 0.0342,
+      "Black": -0.0255,
+      "Hispanic": 0.0154
+    },
+    "6": {
+      "Male": 0.0019,
+      "Female": 0.0,
+      "White": 0.0208,
+      "Black": -0.0263,
+      "Hispanic": 0.0013
+    },
+    "9": {
+      "Male": -0.0301,
+      "Female": 0.0,
+      "White": -0.0008,
+      "Black": -0.0584,
+      "Hispanic": -0.0314
+    }
+  },
+  "adjusted": {
+    "3": {
+      "Male": 0.6652,
+      "Female": 0.58,
+      "White": 0.6258,
+      "Black": 0.7455,
+      "Hispanic": 0.6646
+    },
+    "6": {
+      "Male": 0.7881,
+      "Female": 0.7,
+      "White": 0.7492,
+      "Black": 0.8463,
+      "Hispanic": 0.7887
+    },
+    "9": {
+      "Male": 0.8701,
+      "Female": 0.77,
+      "White": 0.8108,
+      "Black": 0.9284,
+      "Hispanic": 0.8714
+    }
+  },
+  "measured_at": "2026-08-18T22:22:07.958340",
+  "seeds_used": [
+    42,
+    137,
+    251,
+    389,
+    503
+  ],
+  "agents_used": 500,
+  "female_override": 0.0
+}

@@ -1,0 +1,28 @@
+Quarterly recidivism evaluation framework distinguishing warm-up system equilibration from study-period outcome measurement.
+
+
+Figure X illustrates the quarterly recidivism evaluation logic. During the warm-up period, recidivism events are modeled as transient system transitions that allow agents to cycle back into earlier justice states, supporting equilibration of behavioral dynamics. No outcome measures are recorded during this phase. During the study period, recidivism is treated as an absorbing event: once an agent recidivates, they are removed from the risk set and rearrest outcomes are recorded for subsequent 3-, 6-, and 9-year evaluation windows.
+
+flowchart TD
+    A[Quarterly Evaluation] --> B{Warm-up or Study Period?}
+
+    %% Warm-up path
+    B -->|Warm-up| C[Evaluate Recidivism Risk]
+    C -->|No Event| R1[Continue Simulation]
+    C -->|Event| D[Cycle Agent Back to Trial\n(No Outcome Recorded)]
+    D --> R1
+
+    %% Study path
+    B -->|Study| E{Already Recidivated?}
+    E -->|Yes| R2[Remove from Risk Set]
+    E -->|No| F[Evaluate Recidivism Risk]
+
+    F -->|No Event| R2
+    F -->|Event| G[Absorbing Recidivism Event]
+    G --> H[Record Rearrest Timing]
+    H --> I[Set 3 / 6 / 9 Year Outcome Flags]
+    I --> R2
+
+
+
+

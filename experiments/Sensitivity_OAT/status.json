@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-02-09 14:02:04",
+  "finished_at": "2026-02-09 18:48:14",
+  "total_jobs": 7600,
+  "completed": 7600,
+  "ok": 7600,
+  "fail": 0,
+  "max_workers": 24,
+  "chunksize": 8,
+  "elapsed_sec": 17170.1,
+  "raw_csv": "Sensitivity_OAT/sensitivity_raw.csv",
+  "summary_csv": "Sensitivity_OAT/sensitivity_summary.csv",
+  "effect_csv": "Sensitivity_OAT/sensitivity_effect_span.csv"
+}

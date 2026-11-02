@@ -1,0 +1,154 @@
+Feature,Importance,Importance_Type,Model
+Percent_Days_Employed,0.08989554293430298,Feature importance,Random Forest
+Jobs_Per_Year,0.0556349632776251,Feature importance,Random Forest
+Avg_Days_per_DrugTest,0.04337832346956489,Feature importance,Random Forest
+Residence_PUMA,0.03255873930656763,Feature importance,Random Forest
+Supervision_Risk_Score_First,0.027480343975305188,Feature importance,Random Forest
+DrugTests_THC_Positive,0.018942442067784,Feature importance,Random Forest
+Delinquency_Reports_4 or more,0.01219474362763491,Feature importance,Random Forest
+Gang_Affiliated_True,0.011176116446273157,Feature importance,Random Forest
+Gang_Affiliated_False,0.010488632529814525,Feature importance,Random Forest
+Residence_Changes_0,0.008703461279662273,Feature importance,Random Forest
+Delinquency_Reports_0,0.008519839255803362,Feature importance,Random Forest
+Program_Attendances_0,0.008204315831708213,Feature importance,Random Forest
+Prior_Arrest_Episodes_PPViolationCharges_5 or more,0.00797172024896845,Feature importance,Random Forest
+Prior_Arrest_Episodes_PPViolationCharges_0,0.007396167146343721,Feature importance,Random Forest
+Program_Attendances_10 or more,0.00733273319029817,Feature importance,Random Forest
+Education_Level_High School Diploma,0.007320571051678296,Feature importance,Random Forest
+Prison_Years_Less than 1 year,0.007239464879885033,Feature importance,Random Forest
+Dependents_0,0.007085658101882705,Feature importance,Random Forest
+Prison_Offense_Property,0.007059232110381433,Feature importance,Random Forest
+Supervision_Level_First_Standard,0.007018200395307021,Feature importance,Random Forest
+Education_Level_Less than HS diploma,0.006983748338597051,Feature importance,Random Forest
+DrugTests_Meth_Positive,0.006914116303286823,Feature importance,Random Forest
+Prior_Arrest_Episodes_Misd_6 or more,0.006804345992332966,Feature importance,Random Forest
+Condition_Cog_Ed_False,0.006663246553866558,Feature importance,Random Forest
+Dependents_3 or more,0.006659425508993944,Feature importance,Random Forest
+Prison_Years_1-2 years,0.006615298610110501,Feature importance,Random Forest
+Condition_Cog_Ed_True,0.006552379600284088,Feature importance,Random Forest
+Prior_Arrest_Episodes_Violent_1,0.006542170093561157,Feature importance,Random Forest
+Prior_Conviction_Episodes_Prop_0,0.006498952173041004,Feature importance,Random Forest
+Race_WHITE,0.0064127571561673515,Feature importance,Random Forest
+Prior_Arrest_Episodes_Violent_0,0.0064088321439184325,Feature importance,Random Forest
+Age_at_Release_48 or older,0.0063906586583889,Feature importance,Random Forest
+Race_BLACK,0.00638955867496404,Feature importance,Random Forest
+Age_at_Release_23-27,0.006347723271554816,Feature importance,Random Forest
+Dependents_1,0.006346694506106436,Feature importance,Random Forest
+Prior_Arrest_Episodes_Property_0,0.006248107497143616,Feature importance,Random Forest
+Prior_Conviction_Episodes_Drug_0,0.0062164213303970445,Feature importance,Random Forest
+Condition_MH_SA_True,0.00620369314836362,Feature importance,Random Forest
+Residence_Changes_1,0.006189128779804511,Feature importance,Random Forest
+Condition_MH_SA_False,0.006185672127767245,Feature importance,Random Forest
+Prior_Conviction_Episodes_Drug_1,0.006104163727759878,Feature importance,Random Forest
+Supervision_Level_First_High,0.0060883782425560804,Feature importance,Random Forest
+Prior_Conviction_Episodes_Felony_1,0.006050188240304866,Feature importance,Random Forest
+Condition_Other_False,0.006036985532045551,Feature importance,Random Forest
+Prior_Arrest_Episodes_Drug_1,0.005999551349248821,Feature importance,Random Forest
+Condition_Other_True,0.005969572290435736,Feature importance,Random Forest
+Prior_Arrest_Episodes_Property_5 or more,0.0058886635907985825,Feature importance,Random Forest
+DrugTests_Cocaine_Positive,0.005883856947063098,Feature importance,Random Forest
+Prior_Arrest_Episodes_Drug_0,0.005808703466839646,Feature importance,Random Forest
+Delinquency_Reports_1,0.005803007658423842,Feature importance,Random Forest
+Dependents_2,0.005788048838640332,Feature importance,Random Forest
+Prior_Arrest_Episodes_GunCharges_False,0.005743392097327811,Feature importance,Random Forest
+Prior_Conviction_Episodes_Misd_0,0.005730769195745933,Feature importance,Random Forest
+Age_at_Release_28-32,0.005725965895764808,Feature importance,Random Forest
+Prior_Conviction_Episodes_Viol_True,0.005662893856703014,Feature importance,Random Forest
+Prior_Conviction_Episodes_Viol_False,0.005639397785347685,Feature importance,Random Forest
+Prior_Arrest_Episodes_GunCharges_True,0.00562303675518989,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_10 or more,0.0055620867974207795,Feature importance,Random Forest
+Prison_Years_More than 3 years,0.005560827335730578,Feature importance,Random Forest
+Prior_Conviction_Episodes_PPViolationCharges_False,0.0055225273734044395,Feature importance,Random Forest
+Residence_Changes_3 or more,0.005504921093921834,Feature importance,Random Forest
+Prior_Conviction_Episodes_Felony_0,0.005482761390470588,Feature importance,Random Forest
+Prior_Conviction_Episodes_Prop_3 or more,0.005471246642202401,Feature importance,Random Forest
+Prior_Arrest_Episodes_Drug_2,0.0054592247843349585,Feature importance,Random Forest
+Supervision_Level_First_Specialized,0.005451898093796361,Feature importance,Random Forest
+Prior_Conviction_Episodes_Misd_4 or more,0.005427396726264761,Feature importance,Random Forest
+Age_at_Release_33-37,0.005346054978755772,Feature importance,Random Forest
+Prior_Conviction_Episodes_Drug_2 or more,0.005342412287010623,Feature importance,Random Forest
+Prior_Conviction_Episodes_PPViolationCharges_True,0.005297838591636297,Feature importance,Random Forest
+Prior_Conviction_Episodes_Felony_2,0.005270626293119913,Feature importance,Random Forest
+Education_Level_At least some college,0.005264856360882208,Feature importance,Random Forest
+Age_at_Release_18-22,0.005258711775346893,Feature importance,Random Forest
+Prior_Conviction_Episodes_Prop_1,0.005246280148379746,Feature importance,Random Forest
+Prior_Arrest_Episodes_Violent_2,0.005215068090545522,Feature importance,Random Forest
+Prior_Conviction_Episodes_Misd_1,0.005213287550440903,Feature importance,Random Forest
+Prior_Conviction_Episodes_Misd_2,0.005065498944873426,Feature importance,Random Forest
+Prior_Conviction_Episodes_Felony_3 or more,0.005059849499927608,Feature importance,Random Forest
+Prison_Offense_Drug,0.00495395366088981,Feature importance,Random Forest
+Prison_Years_Greater than 2 to 3 years,0.004893753152731391,Feature importance,Random Forest
+Prior_Arrest_Episodes_Property_1,0.004878067791026654,Feature importance,Random Forest
+Violations_Instruction_False,0.004864992378049285,Feature importance,Random Forest
+Residence_Changes_2,0.0048646507010941704,Feature importance,Random Forest
+Prior_Revocations_Probation_True,0.004848659353880863,Feature importance,Random Forest
+Prior_Arrest_Episodes_Property_2,0.004814632435612177,Feature importance,Random Forest
+Prior_Revocations_Probation_False,0.004711817344434602,Feature importance,Random Forest
+Prior_Arrest_Episodes_PPViolationCharges_1,0.004690663722749907,Feature importance,Random Forest
+DrugTests_Other_Positive,0.004682221355824604,Feature importance,Random Forest
+Prior_Arrest_Episodes_DVCharges_False,0.0046743436961104645,Feature importance,Random Forest
+Prior_Arrest_Episodes_Drug_3,0.00465971659399181,Feature importance,Random Forest
+Program_UnexcusedAbsences_0,0.004655883674899797,Feature importance,Random Forest
+Prison_Offense_Violent/Non-Sex,0.004638657620871401,Feature importance,Random Forest
+Prior_Arrest_Episodes_Violent_3 or more,0.004594727182875436,Feature importance,Random Forest
+Prior_Arrest_Episodes_PPViolationCharges_2,0.004578988285558879,Feature importance,Random Forest
+Violations_Instruction_True,0.004551384590021568,Feature importance,Random Forest
+Prior_Arrest_Episodes_DVCharges_True,0.004538247097926715,Feature importance,Random Forest
+Prior_Conviction_Episodes_Prop_2,0.004433873441732277,Feature importance,Random Forest
+Prior_Revocations_Parole_False,0.004396412132905651,Feature importance,Random Forest
+Employment_Exempt_True,0.004282817069568041,Feature importance,Random Forest
+Prior_Conviction_Episodes_Misd_3,0.004272429653879753,Feature importance,Random Forest
+Prior_Arrest_Episodes_Misd_1,0.004248186217747532,Feature importance,Random Forest
+Prior_Arrest_Episodes_Misd_2,0.004226532451468582,Feature importance,Random Forest
+Prior_Revocations_Parole_True,0.004204522925201792,Feature importance,Random Forest
+Age_at_Release_38-42,0.004159762187373086,Feature importance,Random Forest
+Prior_Arrest_Episodes_Property_3,0.004156386572985727,Feature importance,Random Forest
+Employment_Exempt_False,0.004121358067036894,Feature importance,Random Forest
+Prior_Conviction_Episodes_GunCharges_False,0.004100171233279131,Feature importance,Random Forest
+Prior_Arrest_Episodes_PPViolationCharges_3,0.0040925675247866,Feature importance,Random Forest
+Prison_Offense_Other,0.00408066057329178,Feature importance,Random Forest
+Prior_Arrest_Episodes_Drug_5 or more,0.004064972503304505,Feature importance,Random Forest
+Prior_Arrest_Episodes_Misd_3,0.004041645365842132,Feature importance,Random Forest
+Prior_Conviction_Episodes_GunCharges_True,0.004038427604424652,Feature importance,Random Forest
+Violations_MoveWithoutPermission_True,0.004007803754039007,Feature importance,Random Forest
+Program_Attendances_6,0.003997210349265017,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_4,0.003996995458798247,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_3,0.003951949466679415,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_5,0.003935213916706989,Feature importance,Random Forest
+Prior_Arrest_Episodes_Misd_0,0.003923056391319196,Feature importance,Random Forest
+Prior_Arrest_Episodes_PPViolationCharges_4,0.0038941382316506974,Feature importance,Random Forest
+Violations_MoveWithoutPermission_False,0.0038825590535352564,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_6,0.003856765452339916,Feature importance,Random Forest
+Gender_F,0.003838203549866243,Feature importance,Random Forest
+Prior_Arrest_Episodes_Drug_4,0.00379479516370381,Feature importance,Random Forest
+Gender_M,0.003768805139628956,Feature importance,Random Forest
+Prior_Arrest_Episodes_Misd_4,0.0037533648170883773,Feature importance,Random Forest
+Age_at_Release_43-47,0.003676902430131291,Feature importance,Random Forest
+Prior_Arrest_Episodes_Property_4,0.00366829418937309,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_7,0.003480956508210667,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_1,0.003454609821959633,Feature importance,Random Forest
+Prior_Arrest_Episodes_Misd_5,0.003350969357040208,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_8,0.003348859100826623,Feature importance,Random Forest
+Program_UnexcusedAbsences_3 or more,0.0033298809222684885,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_2,0.0032962386911949263,Feature importance,Random Forest
+Prior_Conviction_Episodes_DomesticViolenceCharges_False,0.0030841535089871277,Feature importance,Random Forest
+Delinquency_Reports_2,0.0030672372908778344,Feature importance,Random Forest
+Prior_Conviction_Episodes_DomesticViolenceCharges_True,0.0030122615464087967,Feature importance,Random Forest
+Delinquency_Reports_3,0.002945723991890165,Feature importance,Random Forest
+Program_Attendances_1,0.0028817424551193555,Feature importance,Random Forest
+Violations_FailToReport_False,0.0028469386990146155,Feature importance,Random Forest
+Program_UnexcusedAbsences_1,0.002819316101055464,Feature importance,Random Forest
+Violations_FailToReport_True,0.002781923144276979,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_9,0.0027616979857969562,Feature importance,Random Forest
+Violations_ElectronicMonitoring_True,0.0024551437653264475,Feature importance,Random Forest
+Program_UnexcusedAbsences_2,0.0024200503005707107,Feature importance,Random Forest
+Program_Attendances_5,0.0023715095531009357,Feature importance,Random Forest
+Violations_ElectronicMonitoring_False,0.002303046072471062,Feature importance,Random Forest
+Program_Attendances_3,0.0023010149853491357,Feature importance,Random Forest
+Program_Attendances_2,0.0022817512291060894,Feature importance,Random Forest
+Program_Attendances_4,0.0019362282503090989,Feature importance,Random Forest
+Program_Attendances_7,0.0016140809098819234,Feature importance,Random Forest
+Program_Attendances_8,0.001305525290254106,Feature importance,Random Forest
+Prison_Offense_Violent/Sex,0.0012306481733660743,Feature importance,Random Forest
+Program_Attendances_9,0.000945718237283499,Feature importance,Random Forest
+Prior_Arrest_Episodes_Felony_0,0.0006665387564476107,Feature importance,Random Forest

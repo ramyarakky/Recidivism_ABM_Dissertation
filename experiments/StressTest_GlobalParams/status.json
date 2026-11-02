@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-02-10 01:39:52",
+  "last_update": "2026-02-10 09:29:29",
+  "total_jobs": 1100,
+  "completed": 1100,
+  "ok": 1100,
+  "fail": 0,
+  "elapsed_sec": 28177.15,
+  "eta": "ETA: 0m 0s",
+  "raw_csv": "StressTest_GlobalParams/stress_raw.csv"
+}

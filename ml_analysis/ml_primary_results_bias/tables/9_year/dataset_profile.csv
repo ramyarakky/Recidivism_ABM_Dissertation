@@ -1,0 +1,10 @@
+Measure,Value
+Prediction horizon,9-Year
+Total eligible records,50000
+Rearrest count,40759
+Non-rearrest count,9241
+Rearrest prevalence,0.81518
+Independent simulation seeds,6
+Outer evaluation,Leave-one-simulation-seed-out
+Inner CV,Group-aware CV on training seeds
+Number of baseline predictors,23
