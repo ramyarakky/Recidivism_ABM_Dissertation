@@ -76,13 +76,28 @@ A demographic-neutral baseline is calibrated before demographic-specific bias pa
 
 Relevant scripts include `phase2_bias_supervision_only.py`, `phase2_bias_all_channels.py`, and their calibration variants. These experiments explore mechanisms that *could* produce disparities under the ABM assumptions; fitted coefficients are **not** direct causal estimates of real-world discrimination.
 
-## Machine learning on independent ABM cohorts
+## Machine Learning on Independent ABM Cohorts
 
-`ml_analysis/generate_ml_synthetic_50k_multiseed.py` generates a pooled cohort of approximately **50,000 study-eligible synthetic records** from independent simulation seeds. It retains `simulation_id` and `simulation_seed` for group-aware train/test splitting.
+`ml_analysis/generate_ml_synthetic_50k_multiseed_nobias_DLF.py`  and `ml_analysis/generate_ml_synthetic_50k_multiseed_bias_DLF.py`generates approximately **50,000 study-eligible synthetic records** from independent calibrated ABM simulations, supporting both **NoBias and Bias (supervision-only)** configurations.
 
-`ml_analysis/ml_analysis_95_CI.py` evaluates cumulative outcomes `rearrest_3_yrs`, `rearrest_6_yrs`, and `rearrest_9_yrs`. Models include logistic regression, decision trees, random forests, extra trees, gradient boosting, AdaBoost, k-nearest neighbors, naive Bayes, support vector machines, and XGBoost.
+### Data Generation
+- Captures **study-entry attributes** as candidate predictors and **study-end rearrest outcomes** at 3, 6, and 9 years as labels.
+- Joins study-entry and study-end records using agent IDs to prevent temporal data leakage.
+- Pools records across independent simulations while preserving `simulation_id` and `simulation_seed`.
+- Saves simulation outputs, combined datasets, summaries, and charts in separate folders.
 
-The evaluation uses leave-one-simulation-seed-out outer testing with group-aware cross-validation on training seeds. Baseline-time predictors are used to reduce temporal leakage. Analyses cover discrimination, classification, calibration, demographic parity, disparate impact, true- and false-positive-rate differences, subgroup AUC/Brier scores, and across-seed stability.
+### Machine Learning Evaluation
+
+`ml_analysis/ml_analysis_95_CI.py` evaluates ten classifiers: logistic regression, decision tree, random forest, extra trees, gradient boosting, AdaBoost, KNN, Naive Bayes, SVM, and XGBoost.
+
+- **Validation:** Leave-one-simulation-seed-out testing with group-aware cross-validation.
+- **Prediction:** Cumulative rearrest at 3, 6, and 9 years.
+- **Performance:** ROC-AUC, PR-AUC, accuracy, precision, recall, F1, and Brier score.
+- **Fairness:** Demographic parity, disparate impact, true-positive and false-positive rate differences, and subgroup performance.
+- **Interpretability:** Permutation feature importance.
+- **Robustness:** Across-seed stability and 95% confidence intervals.
+
+The evaluation measures predictive performance and fairness across independent synthetic ABM cohorts rather than random agent-level splits.
 
 ### NIJ comparison
 
@@ -148,6 +163,12 @@ python -m recidivism_abm/experiments/OAT_Calibrate_BJS_PCRA.py
 # Calibrated Run generating necessary visualizations using average across 20 simulation runs
 python -m recidivism_abm/experiments/profile_run_multiseed_multirun_calibrated.py 
 
+# Generate Synthetic Data
+# No Bias
+python generate_ml_synthetic_50k_multiseed_nobias_DLF.py --n-seeds 6 --target-agents 50000   --overwrite
+
+# Bias
+python generate_ml_synthetic_50k_multiseed_bias_DLF.py --n-seeds 6 --target-agents 50000   --overwrite
 ```
 
 Some older or exploratory scripts assume particular paths, datasets, output directories, or HPC worker counts. Review configuration constants and script headers before running large experiments. Start with reduced agent and replication settings to verify the environment.
