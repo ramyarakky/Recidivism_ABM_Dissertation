@@ -165,10 +165,10 @@ python -m recidivism_abm/experiments/profile_run_multiseed_multirun_calibrated.p
 
 # Generate Synthetic Data
 # No Bias
-python generate_ml_synthetic_50k_multiseed_nobias_DLF.py --n-seeds 6 --target-agents 50000   --overwrite
+python generate_ml_synthetic_50k_multiseed_nobias_DLF.py --n-seeds 5 --target-agents 50000   --overwrite
 
 # Bias
-python generate_ml_synthetic_50k_multiseed_bias_DLF.py --n-seeds 6 --target-agents 50000   --overwrite
+python generate_ml_synthetic_50k_multiseed_bias_DLF.py --n-seeds 5 --target-agents 50000   --overwrite
 ```
 
 Some older or exploratory scripts assume particular paths, datasets, output directories, or HPC worker counts. Review configuration constants and script headers before running large experiments. Start with reduced agent and replication settings to verify the environment.
