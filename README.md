@@ -287,17 +287,74 @@ Some older or exploratory scripts assume particular paths, datasets, output dire
 - Avoid using outcome or post-outcome variables as baseline predictors.
 - Document worker counts, random seeds, inputs, parameters, and generated output locations for each experiment.
 
-## Empirical references
 
-- Alper, M., Durose, M. R., & Markman, J. (2018). *2018 Update on Prisoner Recidivism: A 9-Year Follow-up Period (2005–2014).* Bureau of Justice Statistics, NCJ 250975.
-- Post-Conviction Risk Assessment (PCRA) risk-tier data referenced in `config/risk_config.py` and `config/pcra_to_bjs.py`.
-- National Institute of Justice, *Recidivism Forecasting Challenge*, for the separate empirical classification comparison.
-
-Check original data providers' access, attribution, and redistribution terms before republishing underlying datasets.
 
 ## Citation
 
 Dissertation: *An Agent-Based Framework for Recidivism: Synthetic Data Generation, Predictive Modeling, and Algorithmic Fairness Evaluation.* Add a final bibliographic/BibTeX citation once publication details are available.
+
+## Empirical references
+
+The following publications and resources inform the empirical benchmarks, risk-assessment mechanisms, simulation methodology, synthetic-data evaluation, and algorithmic-fairness analysis used in this research.
+
+### Empirical recidivism, supervision, and risk assessment
+
+- **Bureau of Justice Statistics (2021).** [The Justice System](https://bjs.ojp.gov/justice-system). *U.S. Department of Justice*.
+- **National Institute of Justice (n.d.).** Recidivism. *https://nij.ojp.gov/topics/corrections/recidivism*.
+- **Mariel Alper, Matthew R. Durose, Joshua Markman (2018).** 2018 Update on Prisoner Recidivism: A 9-Year Follow-up Period (2005--2014). *Bureau of Justice Statistics*.
+- **Lowenkamp, Christopher T., Johnson, James L., Holsinger, Alexander M., VanBenschoten, Scott W., Robinson, Charles R. (2013).** [The Federal Post Conviction Risk Assessment (PCRA): A Construction and Validation Study](https://doi.org/10.1037/a0030343). *Psychological Services*, 10(1), 87--96.
+- **Johnson, Jennifer L., Lowenkamp, Christopher T., VanBenschoten, Scott W., Robinson, Charles R. (2011).** The Construction and Validation of the Federal Post Conviction Risk Assessment (PCRA). *Federal Probation*, 75(2).
+- **Johnson, James L. (2023).** [Federal Post-Conviction Supervision Outcomes: Rearrests and Revocations](https://www.ussc.gov/sites/default/files/pdf/training/supervised-release-toolkit/J.Johnson%20Federal%20Post-Conviction%20Supervision%20Outcomes_Rearrests%20and%20Revocations.pdf). *Federal Probation*, 87(2), 20--28.
+- **Kaeble, Danielle (2021).** Probation and Parole in the United States, 2020. *Bureau of Justice Statistics*.
+- **National Institute of Justice (2021).** [NIJ Recidivism Forecasting Challenge](https://nij.ojp.gov/funding/recidivism-forecasting-challenge). *U.S. Department of Justice*.
+- **Administrative Office of the U.S. Courts (2016).** Post-Conviction Risk Assessment (PCRA) Technical Manual. *Administrative Office of the U.S. Courts*.
+- **Andrews, D. A., Bonta, James, Wormith, J. Stephen (2006).** [The Recent Past and Near Future of Risk and/or Need Assessment](https://doi.org/10.1177/0011128705281756). *Crime & Delinquency*, 52(1), 7--27.
+- **Andrews, D. A., Bonta, James (2010).** The Psychology of Criminal Conduct. *LexisNexis*.
+- **Gendreau, Paul, Goggin, Claire, Smith, Paula (2000).** Assessing the Validity of the LSI-R with Urban Offenders. *Justice Quarterly*, 17(4), 837--853.
+- **Hanson, R. Karl, Thornton, David (2000).** [Improving Risk Assessments for Sex Offenders: A Comparison of Three Actuarial Scales](https://doi.org/10.1023/A:1005482921333). *Law and Human Behavior*, 24(1), 119--136.
+- **Petersilia, Joan (2003).** When Prisoners Come Home. *Oxford University Press*.
+- **Christopher Uggen (2000).** Work as a Turning Point in the Life Course of Criminals: A Duration Model of Age, Employment, and Recidivism. *American Sociological Review*, 65(4), 529--546.
+- **Sampson, Robert J., Laub, John H. (1993).** Crime in the Making: Pathways and Turning Points Through Life. *Harvard University Press*.
+- **Skeem, Jennifer L., Lowenkamp, Christopher T. (2016).** Risk, Race, and Recidivism. *Criminology*, 54(4), 680--712.
+- **Ouellet, Frederic, Tremblay, Pierre (2014).** Co-Offending and the Diffusion of Criminal Experience. *Journal of Quantitative Criminology*, 30(4), 689--712.
+- **Stevenson, Megan (2017).** Breaking Bad: Mechanisms of Social Influence and the Path to Criminality in Juvenile Jails. *The Review of Economics and Statistics*, 99(5), 824--838.
+- **Pyrooz, David C., Decker, Scott H. (2019).** Competing for Control: Gangs and the Social Order of Prisons. *Cambridge University Press*.
+
+### Agent-based modeling and simulation
+
+- **Joshua M. Epstein (2006).** Generative Social Science: Studies in Agent-Based Computational Modeling. *Princeton University Press*.
+- **Kazil, Jackie, Masad, David, Crooks, Andrew (2020).** [Utilizing Python for Agent-Based Modeling: The Mesa Framework](https://doi.org/10.1007/978-3-030-61255-9_30). *Social, Cultural, and Behavioral Modeling*, 308--317.
+- **Windrum, Paul, Fagiolo, Giorgio, Moneta, Alessio (2007).** Empirical Validation of Agent-Based Models: Alternatives and Prospects. *Journal of Artificial Societies and Social Simulation*, 10(2), 8.
+- **Grimm, Volker, Revilla, Eloy, Berger, Uta, Jeltsch, Florian, Mooij, Wolf M., Railsback, Steven F., Thulke, Hans-Hermann, Weiner, Jacob, Wiegand, Thorsten, DeAngelis, Donald L. (2005).** [Pattern-Oriented Modeling of Agent-Based Complex Systems: Lessons from Ecology](https://doi.org/10.1126/science.1116681). *Science*, 310(5750), 987--991.
+- **Law, Averill M. (2015).** Simulation Modeling and Analysis. *McGraw-Hill Education*.
+- **Malleson, Nick, Heppenstall, Alison, See, Linda (2010).** [Crime Reduction Through Simulation: An Agent-Based Model of Burglary](https://doi.org/10.1016/j.compenvurbsys.2009.10.005). *Computers, Environment and Urban Systems*, 34(3), 236--250.
+- **Malleson, Nick, Birkin, Mark (2012).** [Analysis of Crime Patterns Through the Integration of an Agent-Based Model and a Population Microsimulation](https://doi.org/10.1016/j.compenvurbsys.2012.04.003). *Computers, Environment and Urban Systems*, 36(6), 551--561.
+- **Birks, Daniel, Groff, Elizabeth R., Malleson, Nick (2025).** [Agent-Based Modeling in Criminology](https://doi.org/10.1146/annurev-criminol-022222-033905). *Annual Review of Criminology*, 8, 75--95.
+- **The AnyLogic Company (n.d.).** AnyLogic Simulation Software. *https://www.anylogic.com/*.
+- **Ramya Rakkiappan, Hamdi Kavak (2026).** An Agent-Based Model of Recidivism. *Social, Cultural, and Behavioral Modeling*. *(Final publication metadata to be verified.)*
+
+### Synthetic data and prediction
+
+- **Rubin, Donald B. (1993).** Discussion: Statistical Disclosure Limitation. *Journal of Official Statistics*, 9(2), 461--468.
+- **Drechsler, Jorg (2011).** [Synthetic Datasets for Statistical Disclosure Control: Theory and Implementation](https://doi.org/10.1007/978-1-4614-0326-5). *Springer*, 201.
+- **Snoke, Joshua, Raab, Gillian M., Nowok, Beata, Dibben, Chris, Slavkovic, Aleksandra (2018).** [General and Specific Utility Measures for Synthetic Data](https://doi.org/10.1111/rssa.12358). *Journal of the Royal Statistical Society: Series A (Statistics in Society)*, 181(3), 663--688.
+- **Yoon, Jinsung, Jarrett, Daniel, van der Schaar, Mihaela (2019).** [Time-series Generative Adversarial Networks](https://proceedings.neurips.cc/paper/2019/hash/c9efe5f26cd17ba6216bbe2a7d26d490-Abstract.html). *Advances in Neural Information Processing Systems*, 32, 5508--5518.
+- **Meehl, Paul E. (1954).** Clinical Versus Statistical Prediction: A Theoretical Analysis and a Review of the Evidence. *University of Minnesota Press*.
+- **Grove, William M., Zald, David H., Lebow, Boyd S., Snitz, Beth E., Nelson, Chad (2000).** [Clinical Versus Mechanical Prediction: A Meta-Analysis](https://doi.org/10.1037/1040-3590.12.1.19). *Psychological Assessment*, 12(1), 19--30.
+- **Bushway, Shawn, Sweeten, Gary, Nieuwbeerta, Paul (2009).** Measuring Long-Term Individual Trajectories of Offending Using Multiple Methods. *Journal of Quantitative Criminology*, 25(3), 259--286.
+
+### Algorithmic fairness and recidivism prediction
+
+- **Hardt, Moritz, Price, Eric, Srebro, Nathan (2016).** Equality of Opportunity in Supervised Learning. *Advances in Neural Information Processing Systems*, 29.
+- **Chouldechova, Alexandra (2017).** [Fair Prediction with Disparate Impact: A Study of Bias in Recidivism Prediction Instruments](https://doi.org/10.1089/big.2016.0047). *Big Data*, 5(2), 153--163.
+- **Kleinberg, Jon, Mullainathan, Sendhil, Raghavan, Manish (2017).** [Inherent Trade-Offs in the Fair Determination of Risk Scores](https://doi.org/10.4230/LIPIcs.ITCS.2017.43). *8th Innovations in Theoretical Computer Science Conference (ITCS 2017)*.
+- **Lum, Kristian, Isaac, William (2016).** [To Predict and Serve?](https://doi.org/10.1111/j.1740-9713.2016.00960.x). *Significance*, 13(5), 14--19.
+- **Berk, Richard, Heidari, Hoda, Jabbari, Shahin, Kearns, Michael, Roth, Aaron (2021).** [Fairness in Criminal Justice Risk Assessments: The State of the Art](https://doi.org/10.1177/0049124118782533). *Sociological Methods & Research*, 50(1), 3--44.
+- **Angwin, Julia, Larson, Jeff, Mattu, Surya, Kirchner, Lauren (2016).** [Machine Bias: There's Software Used Across the Country to Predict Future Criminals. And It's Biased Against Blacks](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing). *ProPublica*.
+- **Dressel, Julia, Farid, Hany (2018).** [The Accuracy, Fairness, and Limits of Predicting Recidivism](https://doi.org/10.1126/sciadv.aao5580). *Science Advances*, 4(1), eaao5580.
+
+> **Note:** References are transcribed from the supplied bibliography. Publication details and links have not been independently verified. The source bibliography also includes a shorter duplicate entry for Johnson (2023), which is consolidated here into the more complete citation.
+
 
 ## Research-use notice
 
