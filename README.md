@@ -88,16 +88,116 @@ Relevant scripts include `phase2_bias_supervision_only_withcharts.py `, `phase2_
 
 ### Machine Learning Evaluation
 
-`ml_analysis/ml_analysis_95_CI.py` evaluates ten classifiers: logistic regression, decision tree, random forest, extra trees, gradient boosting, AdaBoost, KNN, Naive Bayes, SVM, and XGBoost.
+The machine-learning evaluation is performed separately for the
+**No-Bias** and **Bias-calibrated** synthetic datasets using two
+dedicated analysis scripts.
 
-- **Validation:** Leave-one-simulation-seed-out testing with group-aware cross-validation.
-- **Prediction:** Cumulative rearrest at 3, 6, and 9 years.
-- **Performance:** ROC-AUC, PR-AUC, accuracy, precision, recall, F1, and Brier score.
-- **Fairness:** Demographic parity, disparate impact, true-positive and false-positive rate differences, and subgroup performance.
-- **Interpretability:** Permutation feature importance.
-- **Robustness:** Across-seed stability and 95% confidence intervals.
+Both pipelines evaluate ten machine-learning classifiers:
+Logistic Regression, Decision Tree, Random Forest, Extra Trees,
+Gradient Boosting, AdaBoost, K-Nearest Neighbors (KNN),
+Naive Bayes, Support Vector Machine (SVM), and XGBoost.
 
-The evaluation measures predictive performance and fairness across independent synthetic ABM cohorts rather than random agent-level splits.
+#### 1. No-Bias Evaluation
+
+**Script:** `ml_analysis_NoBias.py`
+
+Run:
+
+```bash
+python ml_analysis_NoBias.py --workers 64
+```
+
+**Input dataset:**
+
+```text
+ml_synthetic_50k_multiseed_Nobias_DLF/
+└── 02_combined_dataset/
+    └── synthetic_ml_cohort_multiseed_N50000.csv
+```
+
+**Output directory:**
+
+```text
+recidivism_abm/ml_analysis/ml_primary_results_nobias_primary/
+```
+
+#### 2. Bias-Calibrated Evaluation
+
+**Script:** `ml_analysis_Bias.py`
+
+Run:
+
+```bash
+python ml_analysis_Bias.py --workers 64
+```
+
+**Input dataset:**
+
+```text
+ml_synthetic_50k_multiseed_bias_DLF/
+└── 02_combined_dataset/
+    └── synthetic_ml_cohort_multiseed_N50000.csv
+```
+
+**Output directory:**
+
+```text
+recidivism_abm/ml_analysis/ml_primary_results_bias_primary/
+```
+
+#### 3. Evaluation Framework
+
+Both pipelines use a consistent machine-learning evaluation framework.
+
+| Component | Description |
+|---|---|
+| Validation | Leave-one-simulation-seed-out testing with group-aware cross-validation |
+| Prediction horizons | Cumulative first rearrest at 3, 6, and 9 years |
+| Algorithms | Ten classification algorithms |
+| Performance metrics | ROC-AUC, PR-AUC, accuracy, precision, recall (sensitivity), specificity, F1, and Brier score |
+| Fairness metrics | Demographic parity, disparate impact, true-positive-rate and false-positive-rate differences, and subgroup performance |
+| Interpretability | Permutation feature importance |
+| Robustness | Across-seed performance stability, standard deviations, and 95% confidence intervals where computed |
+| Parallel execution | Configurable worker count using `--workers` |
+
+#### 4. Simulation-Level Validation
+
+Machine-learning evaluation uses independent ABM simulation cohorts
+rather than random agent-level training and testing splits.
+
+Each outer evaluation iteration holds out one simulation seed for
+testing, while the remaining simulation seeds are used for model
+training and group-aware validation.
+
+This design reduces the risk of information leakage between records
+generated within the same simulation and evaluates whether models
+trained on one set of synthetic cohorts generalize to independently
+generated ABM cohorts.
+
+Simulation identifiers are used for grouping and are excluded from
+the predictor variables.
+
+#### 5. No-Bias and Bias-Calibrated Comparison
+
+The two pipelines evaluate synthetic data generated under different
+supervision conditions:
+
+- **No-Bias:** Baseline simulation without direct demographic
+  adjustments to the rearrest detection mechanism.
+- **Bias-calibrated:** Simulation incorporating demographic-specific
+  supervision and detection adjustments calibrated against selected
+  BJS subgroup rearrest benchmarks.
+
+The demographic adjustments in the bias-calibrated condition are
+active during both the simulation warm-up and observation periods.
+Consequently, the resulting cohorts may differ in demographic
+composition.
+
+Both datasets use the same cohort eligibility criteria, prediction
+horizons, and evaluation framework.
+
+Comparisons of predictive performance and fairness are interpreted
+in the context of these experimental differences.
 
 ### NIJ comparison
 
