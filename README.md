@@ -71,10 +71,10 @@ The code documents both methodological stages and the operational order of one-a
 
 A demographic-neutral baseline is calibrated before demographic-specific bias parameters are introduced. The `experiments/` scripts include two bias scopes:
 
-- `supervision_only`: differential technical-violation detection and supervision-era rearrest mechanisms.
-- `all_channels`: additional trial, sentencing, and supervision-assignment pathways.
+- `supervision_only`: differential technical-violation detection and supervision-era rearrest mechanisms. Script: 'phase2_bias_supervision_only_withcharts.py' Output : phase2_bias_supervision_only_output
+- `all_channels`: additional trial, sentencing, and supervision-assignment pathways. Script: 'phase2_bias_all_channels_withcharts.py' Output : phase2_bias_all_channels_output
 
-Relevant scripts include `phase2_bias_supervision_only.py`, `phase2_bias_all_channels.py`, and their calibration variants. These experiments explore mechanisms that *could* produce disparities under the ABM assumptions; fitted coefficients are **not** direct causal estimates of real-world discrimination.
+Relevant scripts include `phase2_bias_supervision_only_withcharts.py `, `phase2_bias_all_channels_withcharts.py`, and their calibration variants. These experiments explore mechanisms that *could* produce disparities under the ABM assumptions; fitted coefficients are **not** direct causal estimates of real-world discrimination.
 
 ## Machine Learning on Independent ABM Cohorts
 
