@@ -251,7 +251,11 @@ python -m recidivism_abm/run.py
 python -m recidivism_abm/experiments/profile_run_multiseed_multirun_uncalibrated.py
 
 # Calibrated Run generating necessary visualizations using average across 20 simulation runs
-python -m recidivism_abm/experiments/profile_run_multiseed_multirun_calibrated.py 
+python -m recidivism_abm/experiments/profile_run_multiseed_multirun_calibrated.py
+
+#Validation Runs
+python experiments/validation/recidivism_validation_bias_calibrated.py
+Output: validation_output_bias_calibrated
 
 # Inspect available command-line options
 python -m recidivism_abm/ml_analysis/generate_ml_synthetic_50k_multiseed.py --help
