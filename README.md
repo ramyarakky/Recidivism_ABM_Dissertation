@@ -71,10 +71,8 @@ The code documents both methodological stages and the operational order of one-a
 
 A demographic-neutral baseline is calibrated before demographic-specific bias parameters are introduced. The `experiments/` scripts include two bias scopes:
 
-- `supervision_only`: differential technical-violation detection and supervision-era rearrest mechanisms. Script: 'phase2_bias_supervision_only_withcharts.py' Output : phase2_bias_supervision_only_output
-- `all_channels`: additional trial, sentencing, and supervision-assignment pathways. Script: 'phase2_bias_all_channels_withcharts.py' Output : phase2_bias_all_channels_output
-
-Relevant scripts include `phase2_bias_supervision_only_withcharts.py `, `phase2_bias_all_channels_withcharts.py`, and their calibration variants. These experiments explore mechanisms that *could* produce disparities under the ABM assumptions; fitted coefficients are **not** direct causal estimates of real-world discrimination.
+- `supervision_only`: differential technical-violation detection and supervision-era rearrest mechanisms. Script: 'phase2_bias_supervision_only_Final.py' Output : phase2_bias_supervision_only_output_supervision_only
+- `all_channels`: additional trial, sentencing, and supervision-assignment pathways. Script: 'phase2_bias_all_channels_Final.py' Output : phase2_bias_all_channels_output_all_channels
 
 ## Machine Learning on Independent ABM Cohorts
 
@@ -253,19 +251,36 @@ python -m recidivism_abm/experiments/profile_run_multiseed_multirun_uncalibrated
 # Calibrated Run generating necessary visualizations using average across 20 simulation runs
 python -m recidivism_abm/experiments/profile_run_multiseed_multirun_calibrated.py
 
-#Validation Runs
-python experiments/validation/recidivism_validation_bias_calibrated.py
-Output: validation_output_bias_calibrated
-
-# Inspect available command-line options
-python -m recidivism_abm/ml_analysis/generate_ml_synthetic_50k_multiseed.py --help
-python -m recidivism_abm/ml_analysis/ml_analysis_95_CI.py --help
-python -m recidivism_abm/counterfactual_analysis/counterfactual_analysis.py --help
-
 # BJS/PCRA/offense calibration (computationally demanding)
-python -m recidivism_abm/experiments/OAT_Calibrate_BJS_PCRA.py
+python -m recidivism_abm/experiments/OAT_Calibrate_BJS_PCRA_Latest.py --cores 16
+# Replot Mode 
+python -m recidivism_abm/experiments/OAT_Calibrate_BJS_PCRA_Latest.py --cores 16 --replot
+
 # Calibrated Run generating necessary visualizations using average across 20 simulation runs
-python -m recidivism_abm/experiments/profile_run_multiseed_multirun_calibrated.py 
+python -m recidivism_abm/experiments/profile_run_multiseed_multirun_calibrated.py
+#Validation Runs
+python experiments/validation/recidivism_validation_calibration_phase1.py
+Output: validation_output_calibrated_phase1
+
+#Demographic Validation Runs
+python experiments/Run_Demographics_Comparison_Calibrated_Phase1
+Output: Demographic_Charts_Calibrated_Phase1
+python experiments/validation/recidivism_validation_demographics_calibrated_phase1.py
+Output: validation_output_demographics_calibrated_phase1
+
+# Parameter Sensitivity Analysis: One-at-a-time perturbations and influential parameters.
+python OAT_SensitivityAnalysis_Phase1.py --cores 8
+Output : OAT_SensitivityAnalysis_Output_Phase1
+python peer_influence_sensitivity.py --workers 8 --initial-agents 3000
+Output: OAT_Peer_Influence_Sensitivity_Output
+
+# Phase2 : Differential Supervision outcomes
+python phase2_bias_supervision_only_Final.py  --scope supervision_only
+Output : phase2_bias_supervision_only_output_supervision_only
+python phase2_bias_all_channels_Final.py --scope all_channels
+Output: phase2_bias_all_channels_output_all_channels
+
+# Phase 2: Validation
 
 # Generate Synthetic Data
 # No Bias
