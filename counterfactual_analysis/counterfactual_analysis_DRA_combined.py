@@ -160,7 +160,7 @@ CONFIG = {
     "SEEDS_PER_RUN": 20,
     "BASE_SEED": 1000,
 
-    "output_directory": "counterfactual_output_DRA_Combined",
+    "output_directory": "counterfactual_output_DRA_Combined_Phase2",
     "results_subdir": "model_results",
     "charts_subdir": "charts",
 
@@ -331,7 +331,11 @@ def build_model(
     smi_tier_multipliers=None,
     dynamic_reentry_adjustment: bool = False,
 ) -> RecidivismModel:
-    calibration = get_global_calibration_params()
+    calibration = get_global_calibration_params(overrides={
+    "bias_factor": 1.0,
+    "bias_scope": "supervision_only"
+     })
+
     calibrated_smi = float( calibration["Supervision_Monitoring_Intensity"])
     weights = get_flat_risk_weights()
     peer_config = get_peer_influence_config()
@@ -366,12 +370,9 @@ def build_model(
         kwargs["output_directory"] = str(Path(CONFIG["output_directory"]) / "tmp")
 
     model = RecidivismModel(**kwargs)
+    model.export_csv = False
     model.calibrated_global_smi = calibrated_smi
-    if not np.isclose(calibrated_smi, 1.10):
-        print(
-            f"WARNING: calibrated global SMI is {calibrated_smi:.4f}, "
-            "not the expected 1.10."
-        )
+    
 
     # Compatibility with model versions that do not expose these in __init__.
     model.employment_cf = float(employment_cf)
@@ -2436,6 +2437,25 @@ def main():
         f"{CONFIG['N_RUNS'] * CONFIG['SEEDS_PER_RUN'] * len(CF_LEVELS):,} simulations"
     )
     print(f"Experiments      : {', '.join(experiments)}")
+
+    # ================================================================
+    # VERIFY PHASE 2 CALIBRATION BEFORE RUNNING COUNTERFACTUALS
+    # ================================================================
+
+    cal = get_global_calibration_params(
+        overrides={
+            "bias_factor": CONFIG["bias_factor"],
+            "bias_scope": "supervision_only",
+        }
+    )
+
+    print("\nPhase 2 Calibrated Model Configuration")
+    print(f"Calibrated SMI : {cal['Supervision_Monitoring_Intensity']:.4f}")
+    print(f"Bias factor    : {CONFIG['bias_factor']}")
+    print("Bias scope     : supervision_only")
+    print(f"Race bias      : {cal['group_bias_race']}")
+    print(f"Gender bias    : {cal['group_bias_gender']}")
+    
     print("=" * 78)
 
     start = time.time()

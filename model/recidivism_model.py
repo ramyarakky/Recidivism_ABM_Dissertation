@@ -18,9 +18,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 class RecidivismModel(Model):
-    def __init__(self, initial_agents,bias_factor,
+    def __init__(self, initial_agents,
                   monthly_intake,
                  warmup_months, study_months,enable_peer_influence,
+                 bias_factor=None,
                  weights=None,peer_config=None,seed=40
                  ,mode = "realistic"
                  ,output_directory='Results_Run1'
@@ -84,10 +85,16 @@ class RecidivismModel(Model):
         self.enable_peer_influence = enable_peer_influence  # use constructor arg, not peer_config["enabled"]
         # Use injected calibration if provided, otherwise fall back to config defaults.
         # CRITICAL: apply_calibration must run BEFORE create_agent() so agents
-        # inherit the correct knob values from the start.
-        self.calibration = calibration_params if calibration_params is not None \
-                        else get_global_calibration_params()
-        self.apply_calibration(self.calibration)
+        params = (
+            dict(calibration_params)
+            if calibration_params is not None
+            else get_global_calibration_params()
+        )
+
+        if bias_factor is not None:
+            params["bias_factor"] = float(bias_factor)
+
+        self.apply_calibration(params)
 
         self.peer_influence_weights = self.peer_config
         self.output_directory = output_directory
@@ -186,7 +193,7 @@ class RecidivismModel(Model):
         Apply calibration dict to the model and expose commonly used knobs as attributes.
         This guarantees sensitivity sweeps actually affect dynamics.
         """
-        self.calibration = calibration or {}
+        self.calibration = dict(calibration or {})
 
         self.Risk_Contrast_Strength = float(
             self.calibration.get("Risk_Contrast_Strength", 0.0)
@@ -208,9 +215,8 @@ class RecidivismModel(Model):
             self.calibration.get("Supervision_Monitoring_Decay_After_6Y", 1.0)
         )
 
-        # calibration as the single source of truth for person.py reads.
-        if "bias_factor" not in self.calibration or self.calibration["bias_factor"] == 0.0:
-            self.calibration["bias_factor"] = float(getattr(self, "bias_factor", 0.0))
+        # Synchronize bias_factor
+        self.bias_factor = float(self.calibration.get("bias_factor", 0.0))
 
 
         # If risk weights are provided in calibration, use them
@@ -735,6 +741,35 @@ class RecidivismModel(Model):
         self.tier_boundary_mod    = float(normalized_scores[int((0.291 + 0.356 + 0.239) * n)])
 
     
+    def _export_study_entry_cohort(self):
+        """Save predictors before the study follow-up begins. This is used for ML Analysis"""
+        if not getattr(self, "export_csv", True):
+            return
+
+        study_agents = [
+            a.get_agent_vars().copy()
+            for a in self.schedule.agents
+            if isinstance(a, Person)
+            and getattr(a, "study_eligible_agent", False)
+        ]
+
+        df = pd.DataFrame(study_agents)
+        if df.empty:
+            raise ValueError("Study-entry cohort is empty")
+
+        if "ID" not in df.columns:
+            raise ValueError("Missing ID column")
+
+        if df["ID"].isna().any() or df["ID"].duplicated().any():
+            raise ValueError("Missing or duplicate study-entry IDs")
+
+        filename = os.path.join(
+            self.output_directory,
+            f"{self.seed}_study_entry_cohort.csv"
+        )
+
+        df.to_csv(filename, index=False)
+
     def _finalize_warmup(self):
         try:
 
@@ -815,10 +850,13 @@ class RecidivismModel(Model):
             #    f"Low<{self.tier_boundary_low:.3f}  "
             #    f"LowMod<{self.tier_boundary_lowmod:.3f}  "
             #    f"Mod<{self.tier_boundary_mod:.3f}")
+            self._export_study_entry_cohort()
 
 
         except Exception as e:
             print(f"❌ Warm-up finalization failed: {e}")
+
+
 
 
     def _export_final_cohort(self):
@@ -862,7 +900,7 @@ class RecidivismModel(Model):
         try:
             
             # ─── 1. Simulation Completion ───
-            if self.current_month >= self.max_months:
+            if self.current_month > self.max_months:
                 self._export_final_cohort()
                 self.running = False
                 return
@@ -887,7 +925,7 @@ class RecidivismModel(Model):
             for agent in agents_this_month:
                 try:
                     # During study period, skip agents not eligible for study
-                    if self.current_month >= self.warmup_months and not getattr(agent, "study_eligible_agent", False):
+                    if self.current_month > self.warmup_months and not getattr(agent, "study_eligible_agent", False):
                         continue
                     # Skip agents who have already exited via recidivism
                     if getattr(agent, "exited_due_to_recidivism", False):
@@ -989,18 +1027,25 @@ class RecidivismModel(Model):
         return len(recidivists) / len(eligible) if eligible else 0.0
 
     def compute_cumulative_recidivism_rate(self):
-        recidivated = 0
-        total = 0
+        """Cumulative first-rearrest rate among study-eligible agents."""
+
         if self.current_month <= self.warmup_months:
-        #    return None  # or 0.0, or skip logging during warm-up
-            for agent in self.schedule.agents:
-                if hasattr(agent, "recidivated_agent"):
-                    total += 1
-                    if agent.recidivated_agent:
-                        recidivated += 1
-        rate = recidivated / total if total > 0 else 0.0
-        #self.monthly_recidivism_rate.append(rate)
-        return rate
+            return None
+
+        eligible = [
+            a for a in self.schedule.agents
+            if getattr(a, "study_eligible_agent", False)
+        ]
+
+        if not eligible:
+            return 0.0
+
+        rearrested = sum(
+            1 for a in eligible
+            if getattr(a, "recidivated_agent", False)
+        )
+
+        return rearrested / len(eligible)
     
     def compute_monthly_recidivism_rate(self):
         recidivated = sum(1 for a in self.schedule.agents if a.committed_new_offense_this_month)

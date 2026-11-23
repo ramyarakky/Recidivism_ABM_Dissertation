@@ -30,6 +30,37 @@ def _get(agent, key, default=None):
     # 3. Default
     return default
 
+# ============================================================
+# EDUCATION SCORING — ADD THIS BLOCK HERE
+# ============================================================
+
+EDUCATION_KEYS = {
+    "none": "Education_None",
+    "lessthanhsdiploma": "Education_LessthanHSdiploma",
+    "lessthanhighschooldiploma": "Education_LessthanHSdiploma",
+    "highschooldiploma": "Education_HighSchoolDiploma",
+    "atleastsomecollege": "Education_Atleastsomecollege",
+    "somecollege": "Education_Atleastsomecollege",
+    "college": "Education_Atleastsomecollege",  # FIX
+}
+
+
+def education_weight(agent, weights):
+    raw = str(_get(agent, "Education_Level", "None") or "None")
+    normalized = "".join(c for c in raw.lower() if c.isalnum())
+
+    key = EDUCATION_KEYS.get(normalized)
+
+    if key is None:
+        raise ValueError(
+            f"Unrecognized Education_Level: {raw!r}"
+        )
+
+    if key not in weights:
+        raise KeyError(f"Missing education weight: {key}")
+
+    return float(weights[key])
+
 
 _SENTINEL = object()  # unique sentinel for getattr miss detection
 
@@ -57,10 +88,11 @@ def compute_risk_score(agent, weights=None):
 
         # ── Education ─────────────────────────────────────────────────────────
         # FIX: normalize spaces so "Less than HighSchool Diploma" maps cleanly
-        edu_raw = _get(agent, "Education_Level", "None") or "None"
-        edu_normalized = edu_raw.replace(" ", "")          # strip all spaces
-        edu_key = f"Education_{edu_normalized}"
-        score += weights.get(edu_key, 0.0)
+        #edu_raw = _get(agent, "Education_Level", "None") or "None"
+        #edu_normalized = edu_raw.replace(" ", "")          # strip all spaces
+        #edu_key = f"Education_{edu_normalized}"
+        #score += weights.get(edu_key, 0.0)
+        score += education_weight(agent, weights)
 
         # ── Supervision Profile ───────────────────────────────────────────────
         # FIX: use "Supervision_Level_First_{level}" to match weights dict keys

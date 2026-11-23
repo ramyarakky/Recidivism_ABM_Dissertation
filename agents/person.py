@@ -1351,11 +1351,11 @@ class Person(Agent):
                 setattr(self, attr, 0)
 
         # Update based on offense type
-        if offense in ["Violent/Non-Sex"]:
-            if self.Prior_Conviction_Episodes_Felony < 5:
-                self.Prior_Arrest_Episodes_Felony += 1
-                self.Prior_Conviction_Episodes_Felony += 1
-        elif offense in ["Violent-SexOffender"]:
+        #if offense in ["Violent"]:
+        #    if self.Prior_Conviction_Episodes_Felony < 5:
+        #        self.Prior_Arrest_Episodes_Felony += 1
+        #        self.Prior_Conviction_Episodes_Felony += 1
+        if offense in ["Violent"]:
             if self.Prior_Conviction_Episodes_Violent < 5:
                 self.Prior_Arrest_Episodes_Violent += 1
                 self.Prior_Conviction_Episodes_Violent += 1
@@ -1580,20 +1580,16 @@ class Person(Agent):
         # Ensure Beta parameters > 0
         a_rev = max((mean_percent_revocation / 100) * strength_revocation, 0.01)
         b_rev = max(((100 - mean_percent_revocation) / 100) * strength_revocation, 0.01)
-        p_revocation = self.model.np_rng.beta(a_rev, b_rev)
-        self.Prior_Revocations_Supervision = self.model.np_rng.random() < p_revocation
+        p_revocation_base = self.model.np_rng.beta(a_rev, b_rev)
+        if getattr(self, "is_supervised", False):
+            revocation_bias = self._apply_bias("detect")
+            p_revocation = self.safe_sigmoid(
+                self.logit(p_revocation_base) + revocation_bias
+            )
+        else:
+            p_revocation = p_revocation_base
 
-        # Only a fraction of revocations result in BJS-style rearrest
-        # empirical: 20% of revocations → rearrest (Durose et al., 2014, 2018; Pew, 2019)
-        # ── Conversion: revocation → BJS-style rearrest ───────────────────────
-        # UPDATED: 0.20 → 0.45
-        # Original source (Durose et al., 2014; Pew, 2019) reflects federal
-        # probation population. BJS NCJ 250975 (Alper et al., 2018) reports
-        # prison-release populations have substantially higher rearrest rates.
-        # Back-calculation from quarterly BJS hazard (q1 ≈ 0.0906) against
-        # observed violation/revocation rates gives conversion ≈ 0.38-0.45.
-        # 0.45 is the upper end, consistent with the higher-risk prison-release
-        # cohort relative to federal probationers.
+        self.Prior_Revocations_Supervision = (self.model.np_rng.random() < p_revocation )
         if self.Prior_Revocations_Supervision:
             revoked = True
             conversion_prob = 0.30   # Durose et al. (2014, NCJ 244205)
