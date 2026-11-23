@@ -144,7 +144,7 @@ ml_synthetic_50k_multiseed_Nobias_DLF/
 **Output directory:**
 
 ```text
-recidivism_abm/ml_analysis/ml_primary_results_nobias_primary/
+recidivism_abm/ml_analysis/ML_Output_NoBias_Analysis
 ```
 
 #### 2. Bias-Calibrated Evaluation
@@ -168,7 +168,7 @@ ml_synthetic_50k_multiseed_bias_DLF/
 **Output directory:**
 
 ```text
-recidivism_abm/ml_analysis/ml_primary_results_bias_primary/
+recidivism_abm/ml_analysis/ML_Output_Bias_Analysis
 ```
 
 #### 3. Evaluation Framework
@@ -318,6 +318,14 @@ python generate_ml_synthetic_50k_multiseed_nobias_DLF.py --n-seeds 5 --target-ag
 
 # Bias
 python generate_ml_synthetic_50k_multiseed_bias_DLF.py --n-seeds 5 --target-agents 50000   --overwrite
+
+# ML Analysis
+
+python ml_analysis_NoBias.py --workers 64 --input ml_synthetic_50k_multiseed_nobias_DLF/02_combined_dataset/synthetic_ml_cohort_multiseed_N50000.csv  
+Output : ML_Output_NoBias_Analysis
+
+python ml_analysis_Bias.py --workers 64 --input ml_synthetic_50k_multiseed_bias_DLF/02_combined_dataset/synthetic_ml_cohort_multiseed_N50000.csv  
+Output : ML_Output_Bias_Analysis
 ```
 
 Some older or exploratory scripts assume particular paths, datasets, output directories, or HPC worker counts. Review configuration constants and script headers before running large experiments. Start with reduced agent and replication settings to verify the environment.
