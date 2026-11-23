@@ -330,7 +330,7 @@ python ml_analysis_Bias.py --workers 64 --input ml_synthetic_50k_multiseed_bias_
 Output : ML_Output_Bias_Analysis
 
 #  Counterfactual Experiments
-python counterfactual_analysis_DRA_combined.pu
+python counterfactual_analysis_DRA_combined.py
 Output: counterfactual_output_DRA_Combined_Phase2
 
 ```
