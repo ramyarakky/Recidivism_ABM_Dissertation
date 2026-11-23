@@ -1,0 +1,60 @@
+{
+  "offsets": {
+    "3": {
+      "Male": 0.0152,
+      "Female": 0.1258,
+      "White": 0.0312,
+      "Black": -0.0174,
+      "Hispanic": 0.0127
+    },
+    "6": {
+      "Male": 0.0017,
+      "Female": 0.1013,
+      "White": 0.0173,
+      "Black": -0.021,
+      "Hispanic": -0.0003
+    },
+    "9": {
+      "Male": -0.0179,
+      "Female": 0.0612,
+      "White": 0.0077,
+      "Black": -0.0412,
+      "Hispanic": -0.0191
+    }
+  },
+  "adjusted": {
+    "3": {
+      "Male": 0.68,
+      "Female": 0.58,
+      "White": 0.66,
+      "Black": 0.72,
+      "Hispanic": 0.68
+    },
+    "6": {
+      "Male": 0.79,
+      "Female": 0.7,
+      "White": 0.77,
+      "Black": 0.82,
+      "Hispanic": 0.79
+    },
+    "9": {
+      "Male": 0.84,
+      "Female": 0.77,
+      "White": 0.81,
+      "Black": 0.87,
+      "Hispanic": 0.84
+    }
+  },
+  "measured_at": "2026-11-22T12:21:15.934617",
+  "seeds_used": [
+    42,
+    137,
+    251,
+    389,
+    503
+  ],
+  "agents_used": 500,
+  "female_override": null,
+  "target_policy": "direct_bjs_v1",
+  "bias_scope": "all_channels"
+}

@@ -63,7 +63,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..",
 
 from recidivism_abm.model.recidivism_model import RecidivismModel
 from recidivism_abm.config.risk_config import (
-    get_uncalibrated_params,
+    #get_uncalibrated_params,
     get_global_calibration_params,
 )
 

@@ -586,21 +586,33 @@ if __name__ == "__main__":
     )
    
 
-    json_path = "calibration_output_0330/recommended_params.json"
-    with open(json_path) as f:
-        rec = json.load(f)
+    json_path = os.path.join(OUT_DIR, "recommended_params.json")
 
-    # Store actual per-seed results — not placeholders
+    # Load existing results if available; otherwise create a new record.
+    if os.path.exists(json_path):
+        with open(json_path, "r") as f:
+            rec = json.load(f)
+    else:
+        rec = {
+            "calibration_params": CAL_PARAMS,
+            "n_runs": N_RUNS,
+            "seeds_per_run": SEEDS_PER_RUN,
+            "total_simulations": len(df_results)
+        }
+
+    # Store actual per-seed results
     rec["final_validation"] = {
         "all_3": df_results["rate_3yr"].dropna().tolist(),
         "all_6": df_results["rate_6yr"].dropna().tolist(),
         "all_9": df_results["rate_9yr"].dropna().tolist(),
     }
+
     rec["calibrated_rates"] = {
         "3": float(df_results["rate_3yr"].mean()),
         "6": float(df_results["rate_6yr"].mean()),
         "9": float(df_results["rate_9yr"].mean()),
     }
+
     rec["calibrated_std"] = {
         "3": float(df_results["rate_3yr"].std()),
         "6": float(df_results["rate_6yr"].std()),
@@ -609,4 +621,5 @@ if __name__ == "__main__":
 
     with open(json_path, "w") as f:
         json.dump(rec, f, indent=2)
-    print(f"✅ Updated recommended_params.json with {len(df_results)} real seed results")
+
+    print(f"✅ Saved validation results for {len(df_results)} simulations → {json_path}")

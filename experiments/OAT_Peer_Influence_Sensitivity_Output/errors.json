@@ -1,0 +1,402 @@
+[
+  {
+    "scenario": "peer_off",
+    "seed": 617,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "peer_off",
+    "seed": 251,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "peer_off",
+    "seed": 42,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "peer_off",
+    "seed": 389,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "peer_off",
+    "seed": 743,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "peer_off",
+    "seed": 971,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "peer_off",
+    "seed": 1087,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "zero",
+    "seed": 42,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "zero",
+    "seed": 137,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "zero",
+    "seed": 251,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "zero",
+    "seed": 389,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "zero",
+    "seed": 503,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "zero",
+    "seed": 617,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "zero",
+    "seed": 743,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "peer_off",
+    "seed": 137,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "peer_off",
+    "seed": 503,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "peer_off",
+    "seed": 863,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "zero",
+    "seed": 863,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "zero",
+    "seed": 971,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "low_003",
+    "seed": 42,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "low_003",
+    "seed": 137,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "low_003",
+    "seed": 251,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "zero",
+    "seed": 1087,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "low_003",
+    "seed": 503,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "low_003",
+    "seed": 743,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "low_003",
+    "seed": 389,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "low_003",
+    "seed": 617,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "low_003",
+    "seed": 863,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "low_003",
+    "seed": 971,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "lower_004",
+    "seed": 42,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "lower_004",
+    "seed": 137,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "lower_004",
+    "seed": 251,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "low_003",
+    "seed": 1087,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "lower_004",
+    "seed": 617,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "lower_004",
+    "seed": 389,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "lower_004",
+    "seed": 503,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "lower_004",
+    "seed": 743,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "lower_004",
+    "seed": 863,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "lower_004",
+    "seed": 971,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "baseline_006",
+    "seed": 42,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "baseline_006",
+    "seed": 137,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "lower_004",
+    "seed": 1087,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "baseline_006",
+    "seed": 251,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "baseline_006",
+    "seed": 389,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "baseline_006",
+    "seed": 503,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "baseline_006",
+    "seed": 617,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "baseline_006",
+    "seed": 743,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "baseline_006",
+    "seed": 863,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "baseline_006",
+    "seed": 971,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "upper_008",
+    "seed": 42,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "upper_008",
+    "seed": 251,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "baseline_006",
+    "seed": 1087,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "upper_008",
+    "seed": 137,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "upper_008",
+    "seed": 389,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "upper_008",
+    "seed": 503,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "upper_008",
+    "seed": 743,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "upper_008",
+    "seed": 863,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "upper_008",
+    "seed": 971,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "upper_008",
+    "seed": 1087,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "upper_008",
+    "seed": 617,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "high_009",
+    "seed": 137,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "high_009",
+    "seed": 42,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "high_009",
+    "seed": 251,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "high_009",
+    "seed": 389,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "high_009",
+    "seed": 503,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "high_009",
+    "seed": 617,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "high_009",
+    "seed": 743,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "high_009",
+    "seed": 863,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "high_009",
+    "seed": 971,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "high_009",
+    "seed": 1087,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "stress_012",
+    "seed": 42,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "stress_012",
+    "seed": 137,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "stress_012",
+    "seed": 251,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "stress_012",
+    "seed": 389,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "stress_012",
+    "seed": 503,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "stress_012",
+    "seed": 617,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "stress_012",
+    "seed": 743,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "stress_012",
+    "seed": 863,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "stress_012",
+    "seed": 1087,
+    "error": "No module named 'recidivism_abm'"
+  },
+  {
+    "scenario": "stress_012",
+    "seed": 971,
+    "error": "No module named 'recidivism_abm'"
+  }
+]
