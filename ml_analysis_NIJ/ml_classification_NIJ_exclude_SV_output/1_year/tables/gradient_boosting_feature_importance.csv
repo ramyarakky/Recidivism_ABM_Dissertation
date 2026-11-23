@@ -1,0 +1,114 @@
+Feature,Importance,Importance_Type,Model
+Avg_Days_per_DrugTest,0.14842233034834496,Feature importance,Gradient Boosting
+DrugTests_THC_Positive,0.1412413429390541,Feature importance,Gradient Boosting
+Gang_Affiliated_True,0.11281092822609395,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_PPViolationCharges_0,0.06414105304279306,Feature importance,Gradient Boosting
+Age_at_Release_18-22,0.04633332629250786,Feature importance,Gradient Boosting
+Age_at_Release_23-27,0.037459404907838084,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_PPViolationCharges_5 or more,0.036775499191349884,Feature importance,Gradient Boosting
+Age_at_Release_48 or older,0.03395943725378113,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Property_0,0.027189674450336206,Feature importance,Gradient Boosting
+DrugTests_Cocaine_Positive,0.02663368908871402,Feature importance,Gradient Boosting
+DrugTests_Meth_Positive,0.02648544826392396,Feature importance,Gradient Boosting
+Gang_Affiliated_False,0.025646140214752134,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Property_5 or more,0.02389070713454623,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Prop_0,0.018171125800726017,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Misd_6 or more,0.01758955380047812,Feature importance,Gradient Boosting
+Prison_Years_Less than 1 year,0.01627316670329678,Feature importance,Gradient Boosting
+DrugTests_Other_Positive,0.015926906749396254,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_1,0.013618941511267996,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_10 or more,0.012298933334792572,Feature importance,Gradient Boosting
+Age_at_Release_28-32,0.010551254477220324,Feature importance,Gradient Boosting
+Condition_MH_SA_True,0.010306021833351352,Feature importance,Gradient Boosting
+Prior_Revocations_Parole_False,0.009590041673222808,Feature importance,Gradient Boosting
+Residence_PUMA,0.008670810506118003,Feature importance,Gradient Boosting
+Prison_Offense_Property,0.008482021465278733,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Misd_0,0.007620683053163341,Feature importance,Gradient Boosting
+Age_at_Release_43-47,0.00621796118205097,Feature importance,Gradient Boosting
+Condition_MH_SA_False,0.005394331465061468,Feature importance,Gradient Boosting
+Prison_Offense_Violent/Sex,0.00536872276962296,Feature importance,Gradient Boosting
+Age_at_Release_38-42,0.004955928541688652,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Drug_0,0.0049334710841079845,Feature importance,Gradient Boosting
+Gender_F,0.004912736864194516,Feature importance,Gradient Boosting
+Prison_Years_More than 3 years,0.004709558064085991,Feature importance,Gradient Boosting
+Gender_M,0.004196981280363472,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_PPViolationCharges_4,0.0040537989098553655,Feature importance,Gradient Boosting
+Prison_Offense_Drug,0.004009042214314394,Feature importance,Gradient Boosting
+Prior_Revocations_Parole_True,0.003981750739538906,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_2,0.003041506366902673,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_PPViolationCharges_True,0.003000556870497352,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_8,0.002763367549834055,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Violent_3 or more,0.0026837376749741016,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Prop_3 or more,0.0026660982753131395,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Misd_4 or more,0.0024346830396996524,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_PPViolationCharges_1,0.0024249162038153236,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Property_4,0.0020084182893471687,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Viol_True,0.0019377907134680286,Feature importance,Gradient Boosting
+Education_Level_At least some college,0.0018545020789188555,Feature importance,Gradient Boosting
+Dependents_1,0.001803387884229739,Feature importance,Gradient Boosting
+Prison_Years_Greater than 2 to 3 years,0.001258387615421967,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Misd_0,0.0012308701140704992,Feature importance,Gradient Boosting
+Race_WHITE,0.0010930083615424764,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Felony_3 or more,0.0010891530034161279,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Misd_3,0.0010004606541979984,Feature importance,Gradient Boosting
+Condition_Cog_Ed_True,0.000994495622962326,Feature importance,Gradient Boosting
+Prior_Revocations_Probation_False,0.0009743635494689954,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Drug_2 or more,0.0009598343252869355,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_DVCharges_True,0.0009129163807000022,Feature importance,Gradient Boosting
+Race_BLACK,0.0008669798429280451,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_5,0.0008264004085074401,Feature importance,Gradient Boosting
+Education_Level_Less than HS diploma,0.0007805951300089453,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Misd_2,0.0007784978297453223,Feature importance,Gradient Boosting
+Dependents_0,0.0007527244571599016,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_PPViolationCharges_False,0.0007224920233944776,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Felony_0,0.0006734016578266516,Feature importance,Gradient Boosting
+Education_Level_High School Diploma,0.000642680457032297,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_4,0.0005089248400265237,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Violent_0,0.0005074118315659902,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Drug_0,0.0004418686503376511,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_PPViolationCharges_3,0.0004308813533524771,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Drug_3,0.00040309274123029505,Feature importance,Gradient Boosting
+Prison_Years_1-2 years,0.0004019368503960426,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Felony_1,0.00036086385161764175,Feature importance,Gradient Boosting
+Dependents_3 or more,0.00032862544766015773,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_0,0.00031444014210722316,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Misd_3,0.00030588186317175644,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Property_2,0.00023274639475373392,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Property_3,0.00023096259151716327,Feature importance,Gradient Boosting
+Age_at_Release_33-37,0.000210429272927721,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Prop_1,0.00016137306517306408,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Property_1,0.00016073947378213567,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Felony_2,8.698724774119159e-07,Feature importance,Gradient Boosting
+Prison_Offense_Violent/Non-Sex,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Misd_1,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_9,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_6,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_7,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Felony_3,0.0,Feature importance,Gradient Boosting
+Dependents_2,0.0,Feature importance,Gradient Boosting
+Prison_Offense_Other,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_PPViolationCharges_2,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Violent_2,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Violent_1,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Misd_4,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Misd_5,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Drug_5 or more,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Drug_4,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Drug_2,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_Drug_1,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_GunCharges_False,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_GunCharges_True,0.0,Feature importance,Gradient Boosting
+Prior_Arrest_Episodes_DVCharges_False,0.0,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Drug_1,0.0,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Misd_1,0.0,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Prop_2,0.0,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Misd_2,0.0,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_Viol_False,0.0,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_GunCharges_False,0.0,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_GunCharges_True,0.0,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_DomesticViolenceCharges_False,0.0,Feature importance,Gradient Boosting
+Prior_Conviction_Episodes_DomesticViolenceCharges_True,0.0,Feature importance,Gradient Boosting
+Prior_Revocations_Probation_True,0.0,Feature importance,Gradient Boosting
+Condition_Cog_Ed_False,0.0,Feature importance,Gradient Boosting
+Condition_Other_False,0.0,Feature importance,Gradient Boosting
+Condition_Other_True,0.0,Feature importance,Gradient Boosting

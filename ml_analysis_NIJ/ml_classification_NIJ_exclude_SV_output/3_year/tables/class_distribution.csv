@@ -1,0 +1,5 @@
+Split,Class,Count,Percent
+Training,No Rearrest,8745,42.311786336365394
+Training,Rearrest,11923,57.688213663634606
+Holdout Test,No Rearrest,2186,42.306947938842654
+Holdout Test,Rearrest,2981,57.693052061157346

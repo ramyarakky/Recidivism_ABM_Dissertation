@@ -1,0 +1,114 @@
+Feature,Importance,Importance_Type,Model
+Age_at_Release_18-22,0.12675724906152577,Feature importance,AdaBoost
+DrugTests_THC_Positive,0.11500329489280137,Feature importance,AdaBoost
+Prior_Arrest_Episodes_PPViolationCharges_0,0.10372833566644074,Feature importance,AdaBoost
+Gang_Affiliated_False,0.07426445333481863,Feature importance,AdaBoost
+Age_at_Release_23-27,0.06845744609938602,Feature importance,AdaBoost
+Age_at_Release_48 or older,0.05635023966097322,Feature importance,AdaBoost
+Prior_Arrest_Episodes_PPViolationCharges_1,0.04612196663830402,Feature importance,AdaBoost
+DrugTests_Meth_Positive,0.04554139595747769,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Property_5 or more,0.04138143494949681,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Property_0,0.0376924351074896,Feature importance,AdaBoost
+Prison_Years_Less than 1 year,0.03189212026571367,Feature importance,AdaBoost
+Prior_Arrest_Episodes_PPViolationCharges_5 or more,0.031704954742414374,Feature importance,AdaBoost
+Prison_Offense_Violent/Sex,0.02620865769762727,Feature importance,AdaBoost
+Age_at_Release_28-32,0.025406365727947702,Feature importance,AdaBoost
+Condition_MH_SA_True,0.024337783667164867,Feature importance,AdaBoost
+Gender_F,0.02251203148691354,Feature importance,AdaBoost
+Prior_Revocations_Parole_False,0.02000723560962802,Feature importance,AdaBoost
+Age_at_Release_43-47,0.018926063294404348,Feature importance,AdaBoost
+Gender_M,0.01730151876826557,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Violent_0,0.016726307017696472,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Property_1,0.01407153832296888,Feature importance,AdaBoost
+Avg_Days_per_DrugTest,0.013348544904716134,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_10 or more,0.011733039346235857,Feature importance,AdaBoost
+DrugTests_Other_Positive,0.010525587779589273,Feature importance,AdaBoost
+Education_Level_At least some college,0.0,Feature importance,AdaBoost
+Age_at_Release_33-37,0.0,Feature importance,AdaBoost
+Age_at_Release_38-42,0.0,Feature importance,AdaBoost
+Race_WHITE,0.0,Feature importance,AdaBoost
+Race_BLACK,0.0,Feature importance,AdaBoost
+Education_Level_Less than HS diploma,0.0,Feature importance,AdaBoost
+Dependents_0,0.0,Feature importance,AdaBoost
+Dependents_1,0.0,Feature importance,AdaBoost
+Education_Level_High School Diploma,0.0,Feature importance,AdaBoost
+Prison_Years_Greater than 2 to 3 years,0.0,Feature importance,AdaBoost
+Prison_Years_1-2 years,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_0,0.0,Feature importance,AdaBoost
+Prison_Years_More than 3 years,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_1,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_2,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_3,0.0,Feature importance,AdaBoost
+Gang_Affiliated_True,0.0,Feature importance,AdaBoost
+Dependents_2,0.0,Feature importance,AdaBoost
+Dependents_3 or more,0.0,Feature importance,AdaBoost
+Prison_Offense_Other,0.0,Feature importance,AdaBoost
+Prison_Offense_Drug,0.0,Feature importance,AdaBoost
+Prison_Offense_Property,0.0,Feature importance,AdaBoost
+Prison_Offense_Violent/Non-Sex,0.0,Feature importance,AdaBoost
+Residence_PUMA,0.0,Feature importance,AdaBoost
+DrugTests_Cocaine_Positive,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Misd_2,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Misd_1,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Misd_0,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_9,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_8,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_7,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_6,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_5,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Felony_4,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Violent_2,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Violent_3 or more,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Property_2,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Property_3,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Misd_3,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Violent_1,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Misd_6 or more,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Drug_1,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Drug_0,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Property_4,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Drug_2,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Drug_5 or more,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Drug_4,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_PPViolationCharges_2,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Drug_3,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_PPViolationCharges_3,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_PPViolationCharges_4,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_DVCharges_False,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_DVCharges_True,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_GunCharges_False,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_GunCharges_True,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Misd_5,0.0,Feature importance,AdaBoost
+Prior_Arrest_Episodes_Misd_4,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Felony_1,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Felony_0,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Felony_2,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Felony_3 or more,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Misd_2,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Misd_3,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Misd_0,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Misd_1,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Viol_True,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Prop_0,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Prop_1,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Prop_2,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Prop_3 or more,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Drug_0,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Misd_4 or more,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Viol_False,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Drug_2 or more,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_Drug_1,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_DomesticViolenceCharges_False,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_PPViolationCharges_False,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_DomesticViolenceCharges_True,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_GunCharges_False,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_GunCharges_True,0.0,Feature importance,AdaBoost
+Prior_Conviction_Episodes_PPViolationCharges_True,0.0,Feature importance,AdaBoost
+Prior_Revocations_Parole_True,0.0,Feature importance,AdaBoost
+Prior_Revocations_Probation_False,0.0,Feature importance,AdaBoost
+Prior_Revocations_Probation_True,0.0,Feature importance,AdaBoost
+Condition_MH_SA_False,0.0,Feature importance,AdaBoost
+Condition_Cog_Ed_False,0.0,Feature importance,AdaBoost
+Condition_Cog_Ed_True,0.0,Feature importance,AdaBoost
+Condition_Other_False,0.0,Feature importance,AdaBoost
+Condition_Other_True,0.0,Feature importance,AdaBoost
