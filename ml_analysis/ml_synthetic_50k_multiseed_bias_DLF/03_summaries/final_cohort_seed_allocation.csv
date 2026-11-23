@@ -1,0 +1,6 @@
+simulation_id,seed,available_agents,selected_agents,partially_sampled_to_hit_target
+1,21000,31927,9973,True
+2,22000,32077,10020,True
+3,23000,32006,9998,True
+4,24000,31992,9993,True
+5,25000,32066,10016,True

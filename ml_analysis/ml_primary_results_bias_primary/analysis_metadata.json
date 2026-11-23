@@ -1,0 +1,183 @@
+{
+  "input_file": "/home/rrakkiap/Recidivism_ABM_Submission/recidivism_abm/ml_analysis/ml_synthetic_50k_multiseed_bias_DLF/02_combined_dataset/synthetic_ml_cohort_multiseed_N50000.csv",
+  "scenario": "nobias",
+  "feature_set": "primary",
+  "study_entry_predictors_only": true,
+  "study_end_outcomes_only": true,
+  "inner_cv_interval_caveat": "Inner CV folds across outer runs overlap; intervals are descriptive, not independent-replication CIs.",
+  "model_selection_caveat": "Best model chosen using outer held-out results; selected-model performance may be optimistic.",
+  "targets": [
+    "rearrest_3_yrs",
+    "rearrest_6_yrs",
+    "rearrest_9_yrs"
+  ],
+  "group_column": "simulation_seed",
+  "outer_evaluation": "leave-one-simulation-seed-out",
+  "inner_cv": "GroupKFold on training simulation seeds",
+  "max_inner_cv_folds": 5,
+  "random_state": 42,
+  "bootstrap_reps": 500,
+  "hpc_workers": 64,
+  "parallel_strategy": "model-by-inner-fold process parallelism with estimator threads limited to 1",
+  "included_predictors": [
+    "Gender",
+    "Race",
+    "Age_at_Entry",
+    "Age_at_Release",
+    "Gang_Affiliated",
+    "Dependents",
+    "Education_Level",
+    "Supervision_Level_First",
+    "offense",
+    "Prior_Conviction_Episodes_Felony",
+    "Prior_Conviction_Episodes_Misd",
+    "Prior_Conviction_Episodes_Violent",
+    "Prior_Conviction_Episodes_Property",
+    "Prior_Conviction_Episodes_Drug",
+    "Prior_Revocations_Supervision",
+    "Condition_MH_SA",
+    "Condition_Cog_Ed",
+    "Condition_Other"
+  ],
+  "models": [
+    "Logistic Regression",
+    "Decision Tree",
+    "Random Forest",
+    "Extra Trees",
+    "Gradient Boosting",
+    "AdaBoost",
+    "K-Nearest Neighbors",
+    "Naive Bayes",
+    "Support Vector Machine",
+    "XGBoost"
+  ],
+  "simulation_seeds": [
+    21000,
+    22000,
+    23000,
+    24000,
+    25000
+  ],
+  "horizons": {
+    "rearrest_3_yrs": {
+      "label": "3-Year",
+      "n_records": 50000,
+      "prevalence": 0.698,
+      "n_simulation_seeds": 5,
+      "heldout_seeds": [
+        21000,
+        22000,
+        23000,
+        24000,
+        25000
+      ],
+      "best_model_by_mean_seed_holdout_roc_auc": "Logistic Regression",
+      "best_model_mean_seed_holdout_roc_auc": 0.6470935386262239,
+      "best_model_sd_seed_holdout_roc_auc": 0.005754629214157235,
+      "best_model_mean_seed_holdout_pr_auc": 0.8055425538357064,
+      "best_model_mean_seed_holdout_brier": 0.19893268205572118,
+      "numeric_predictors": [
+        "Age_at_Entry",
+        "Age_at_Release",
+        "Dependents",
+        "Prior_Conviction_Episodes_Felony",
+        "Prior_Conviction_Episodes_Misd",
+        "Prior_Conviction_Episodes_Violent",
+        "Prior_Conviction_Episodes_Property",
+        "Prior_Conviction_Episodes_Drug"
+      ],
+      "categorical_predictors": [
+        "Gender",
+        "Race",
+        "Gang_Affiliated",
+        "Education_Level",
+        "Supervision_Level_First",
+        "offense",
+        "Prior_Revocations_Supervision",
+        "Condition_MH_SA",
+        "Condition_Cog_Ed",
+        "Condition_Other"
+      ]
+    },
+    "rearrest_6_yrs": {
+      "label": "6-Year",
+      "n_records": 50000,
+      "prevalence": 0.7985,
+      "n_simulation_seeds": 5,
+      "heldout_seeds": [
+        21000,
+        22000,
+        23000,
+        24000,
+        25000
+      ],
+      "best_model_by_mean_seed_holdout_roc_auc": "Logistic Regression",
+      "best_model_mean_seed_holdout_roc_auc": 0.6644945156738938,
+      "best_model_sd_seed_holdout_roc_auc": 0.006918402695883945,
+      "best_model_mean_seed_holdout_pr_auc": 0.8833065731382284,
+      "best_model_mean_seed_holdout_brier": 0.1522286666673317,
+      "numeric_predictors": [
+        "Age_at_Entry",
+        "Age_at_Release",
+        "Dependents",
+        "Prior_Conviction_Episodes_Felony",
+        "Prior_Conviction_Episodes_Misd",
+        "Prior_Conviction_Episodes_Violent",
+        "Prior_Conviction_Episodes_Property",
+        "Prior_Conviction_Episodes_Drug"
+      ],
+      "categorical_predictors": [
+        "Gender",
+        "Race",
+        "Gang_Affiliated",
+        "Education_Level",
+        "Supervision_Level_First",
+        "offense",
+        "Prior_Revocations_Supervision",
+        "Condition_MH_SA",
+        "Condition_Cog_Ed",
+        "Condition_Other"
+      ]
+    },
+    "rearrest_9_yrs": {
+      "label": "9-Year",
+      "n_records": 50000,
+      "prevalence": 0.8183,
+      "n_simulation_seeds": 5,
+      "heldout_seeds": [
+        21000,
+        22000,
+        23000,
+        24000,
+        25000
+      ],
+      "best_model_by_mean_seed_holdout_roc_auc": "Logistic Regression",
+      "best_model_mean_seed_holdout_roc_auc": 0.6688176486223115,
+      "best_model_sd_seed_holdout_roc_auc": 0.008892545481769628,
+      "best_model_mean_seed_holdout_pr_auc": 0.8974934210217593,
+      "best_model_mean_seed_holdout_brier": 0.14087820532338133,
+      "numeric_predictors": [
+        "Age_at_Entry",
+        "Age_at_Release",
+        "Dependents",
+        "Prior_Conviction_Episodes_Felony",
+        "Prior_Conviction_Episodes_Misd",
+        "Prior_Conviction_Episodes_Violent",
+        "Prior_Conviction_Episodes_Property",
+        "Prior_Conviction_Episodes_Drug"
+      ],
+      "categorical_predictors": [
+        "Gender",
+        "Race",
+        "Gang_Affiliated",
+        "Education_Level",
+        "Supervision_Level_First",
+        "offense",
+        "Prior_Revocations_Supervision",
+        "Condition_MH_SA",
+        "Condition_Cog_Ed",
+        "Condition_Other"
+      ]
+    }
+  }
+}

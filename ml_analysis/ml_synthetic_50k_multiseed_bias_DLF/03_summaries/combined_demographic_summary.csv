@@ -1,0 +1,14 @@
+variable,category,n,percent
+Race,Black,18281,36.562
+Race,White,17999,35.998000000000005
+Race,Hispanic,13720,27.439999999999998
+Gender,Male,45819,91.63799999999999
+Gender,Female,4181,8.362
+pcra_tier,LowModerate,17799,35.598
+pcra_tier,Low,14599,29.198
+pcra_tier,Moderate,11950,23.9
+pcra_tier,High,5652,11.304
+offense,Property,16078,32.156
+offense,Violent,14338,28.676000000000002
+offense,Drug,11056,22.112000000000002
+offense,Other(PublicOrder),8528,17.055999999999997
