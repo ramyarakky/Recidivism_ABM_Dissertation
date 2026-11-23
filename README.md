@@ -59,13 +59,41 @@ The code compares cumulative rearrest to the BJS nine-year follow-up benchmarks:
 
 Year-one rearrest (43.9% in the model configuration) is monitored as a diagnostic, rather than used as a primary fitting target in the staged calibration script.
 
-The calibration architecture distinguishes three target families:
 
-1. **Aggregate BJS trajectory**: supervision-monitoring intensity and temporal-decay parameters.
-2. **PCRA tier heterogeneity**: risk-contrast strength, evaluated at Low, Low-Moderate, Moderate, and High tiers.
-3. **Offense heterogeneity**: offense-specific hazard shifts for Violent, Property, Drug, and Other/Public Order categories.
+## Calibration Experiments
 
-The code documents both methodological stages and the operational order of one-at-a-time (OAT) sweeps. Refer to `config/risk_config.py` and `experiments/OAT_Calibrate_BJS_PCRA.py` for current parameters and experiment settings.
+The agent-based model uses a three-stage calibration process to align simulated rearrest outcomes with empirical benchmarks from the Post Conviction Risk Assessment (PCRA) framework and the Bureau of Justice Statistics (BJS).
+
+Calibration is performed in the following sequence:
+
+1. **Stage 1 – PCRA Risk-Tier Calibration:** Calibrates rearrest patterns across risk classifications.
+2. **Stage 2 – BJS Aggregate Rearrest Calibration:** Calibrates cumulative rearrest rates at 3, 6, and 9 years.
+3. **Stage 3 – BJS Offense-Specific Calibration:** Calibrates rearrest patterns across offense categories.
+
+### Run Calibration
+
+The full calibration experiment is computationally demanding. Parallel execution is recommended.
+
+```bash
+python -m recidivism_abm.experiments.OAT_Calibrate_BJS_PCRA_Latest --cores 16
+```
+
+### Replot Existing Results
+
+Regenerate calibration figures from existing experiment outputs without rerunning the calibration.
+
+```bash
+python -m recidivism_abm.experiments.OAT_Calibrate_BJS_PCRA_Latest --cores 16 --replot
+```
+
+### Notes
+
+- `--cores 16` specifies 16 CPU cores for parallel execution.
+- `--replot` regenerates plots using previously saved calibration results.
+- Full calibration may take considerable time depending on the number of simulation replications, candidate parameters, and available computing resources.
+- Calibration outputs are used to evaluate agreement with empirical risk-tier, aggregate rearrest, and offense-specific benchmarks.
+
+
 
 ## Supervision and demographic disparity experiments
 
@@ -269,18 +297,20 @@ python experiments/validation/recidivism_validation_demographics_calibrated_phas
 Output: validation_output_demographics_calibrated_phase1
 
 # Parameter Sensitivity Analysis: One-at-a-time perturbations and influential parameters.
-python OAT_SensitivityAnalysis_Phase1.py --cores 8
+python experiments/OAT_SensitivityAnalysis_Phase1.py --cores 8
 Output : OAT_SensitivityAnalysis_Output_Phase1
 python peer_influence_sensitivity.py --workers 8 --initial-agents 3000
 Output: OAT_Peer_Influence_Sensitivity_Output
 
 # Phase2 : Differential Supervision outcomes
-python phase2_bias_supervision_only_Final.py  --scope supervision_only
+python experiments/phase2_bias_supervision_only_Final.py  --scope supervision_only
 Output : phase2_bias_supervision_only_output_supervision_only
-python phase2_bias_all_channels_Final.py --scope all_channels
+python experiments/phase2_bias_all_channels_Final.py --scope all_channels
 Output: phase2_bias_all_channels_output_all_channels
 
 # Phase 2: Validation
+python experiments/validation/recidivism_validation_bias_calibrated_phase2.py
+Output: validation_output_bias_calibrated_phase2
 
 # Generate Synthetic Data
 # No Bias
