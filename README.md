@@ -233,7 +233,9 @@ in the context of these experimental differences.
 
 Scripts in `counterfactual_analysis/` vary employment, program participation, residence stability, and other reentry mechanisms, with matched seeds used to support paired comparisons.
 
-`counterfactual_analysis/counterfactual_analysis.py` supports employment and program sweeps and produces raw results, summary tables, paired effects, mechanism checks, and charts. Other files in the folder extend those experiments to additional reentry mechanisms. Findings describe **model-conditional scenarios**, not measured policy effects.
+`counterfactual_analysis/counterfactual_analysis_DRA_combined` supports employment and program sweeps and produces raw results, summary tables, paired effects, mechanism checks, and charts. Other files in the folder extend those experiments to additional reentry mechanisms. Findings describe **model-conditional scenarios**, not measured policy effects.
+
+Output:counterfactual_output_DRA_Combined_Phase2
 
 ## Installation
 
@@ -326,6 +328,11 @@ Output : ML_Output_NoBias_Analysis
 
 python ml_analysis_Bias.py --workers 64 --input ml_synthetic_50k_multiseed_bias_DLF/02_combined_dataset/synthetic_ml_cohort_multiseed_N50000.csv  
 Output : ML_Output_Bias_Analysis
+
+#  Counterfactual Experiments
+python counterfactual_analysis_DRA_combined.pu
+Output: counterfactual_output_DRA_Combined_Phase2
+
 ```
 
 Some older or exploratory scripts assume particular paths, datasets, output directories, or HPC worker counts. Review configuration constants and script headers before running large experiments. Start with reduced agent and replication settings to verify the environment.
