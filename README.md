@@ -233,7 +233,7 @@ in the context of these experimental differences.
 
 Scripts in `counterfactual_analysis/` vary employment, program participation, residence stability, and other reentry mechanisms, with matched seeds used to support paired comparisons.
 
-`counterfactual_analysis/counterfactual_analysis_DRA_combined` supports employment and program sweeps and produces raw results, summary tables, paired effects, mechanism checks, and charts. Other files in the folder extend those experiments to additional reentry mechanisms. Findings describe **model-conditional scenarios**, not measured policy effects.
+`counterfactual_analysis/counterfactual_analysis_DRA_combined.py` supports employment and program sweeps and produces raw results, summary tables, paired effects, mechanism checks, and charts. Other files in the folder extend those experiments to additional reentry mechanisms. Findings describe **model-conditional scenarios**, not measured policy effects.
 
 Output:counterfactual_output_DRA_Combined_Phase2
 
