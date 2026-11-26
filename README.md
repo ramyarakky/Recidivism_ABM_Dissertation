@@ -33,6 +33,19 @@ The model advances in **monthly steps** and supports a **144-month warm-up** fol
 - `config/pcra_to_bjs.py`: PCRA tier benchmark support.
 - `server.py` and `run.py`: interactive Mesa visualization.
 
+### Simulation Terminology
+
+The following terminology is used consistently across the dissertation and repository:
+
+- **Agent-Based Model (ABM):** The overall computational model representing agents, behavioral rules, criminal justice transitions, and interactions.
+- **Model Configuration:** A specific set of parameters and mechanisms, such as the demographic-neutral baseline or differential supervision configuration.
+- **Simulation Run:** One execution of the ABM using a specified configuration and random seed.
+- **Replication:** A repeated execution under the same model configuration to evaluate stochastic variability.
+- **Experimental Scenario:** A defined change to parameters, mechanisms, or intervention conditions for comparison with a baseline.
+- **Agent-Based Framework:** The broader methodology integrating the ABM, empirical calibration, synthetic data generation, predictive modeling, and fairness evaluation.
+
+Independent simulation runs generate separate study-eligible cohorts. These cohorts support model calibration, validation, sensitivity analysis, and cross-run predictive evaluation.
+
 ## Repository structure
 
 | Directory | Contents |
